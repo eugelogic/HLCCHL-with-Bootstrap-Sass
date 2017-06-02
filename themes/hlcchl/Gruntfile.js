@@ -20,7 +20,7 @@ module.exports = function (grunt) {
          // first define where you want the content to go
          // and then specify where the content is coming from.
          files: {
-           'compiled/style.css': 'sass/style.scss'
+           'style-human.css': 'sass/style.scss'
          }
        },
        // distribution task, like the "dev" task but with compressed stylesheet version to be shipped with the theme
@@ -30,7 +30,7 @@ module.exports = function (grunt) {
            sourcemap: 'none'
          },
          files: {
-           'compiled/style-min.css': 'sass/style.scss'
+           'style.css': 'sass/style.scss'
          }
        }
      },
