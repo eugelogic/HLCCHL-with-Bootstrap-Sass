@@ -11,16 +11,15 @@
 
 ?>
 
-	</div><!-- #content -->
-
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'hlcchl' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'hlcchl' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'hlcchl' ), 'hlcchl', '<a href="https://automattic.com/" rel="designer">Eugene Molari</a>' ); ?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+<!-- FOOTER
+================================================== -->
+<footer>
+	<div class="container">
+		<p>Holly Lodge Community Centre is a registered charity 293003 2013-2016<br />
+		Website by <a href="http://webjigsaw.com/" target="_blank">Web Jigsaw</a> | Obviously powered by <a href="https://wordpress.org/" target="_blank">WordPress</a>.
+		</p>
+	</div><!-- container -->
+</footer>
 
 <?php wp_footer(); ?>
 
