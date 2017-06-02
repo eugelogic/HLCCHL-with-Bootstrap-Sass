@@ -1,0 +1,6 @@
+# Ignore the following files from within the hlcchl theme repository.
+themes/hlcchl/node_modules
+themes/hlcchl/.npm-debug.log
+themes/hlcchl/tmp
+themes/hlcchl/.sass-cache
+themes/hlcchl/*.css.map
