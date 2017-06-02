@@ -1,3 +1,4 @@
+// Gruntfile with watch, sass & autoprefixer tasks.
 module.exports = function (grunt) {
 
   grunt.initConfig({
@@ -20,7 +21,7 @@ module.exports = function (grunt) {
          // first define where you want the content to go
          // and then specify where the content is coming from.
          files: {
-           'style-human.css': 'sass/style.scss'
+           'compiled/style-human.css': 'sass/style.scss'
          }
        },
        // distribution task, like the "dev" task but with compressed stylesheet version to be shipped with the theme
@@ -30,10 +31,26 @@ module.exports = function (grunt) {
            sourcemap: 'none'
          },
          files: {
-           'style.css': 'sass/style.scss'
+           'compiled/style.css': 'sass/style.scss'
          }
        }
      },
+
+     /**
+       * Autoprefixer task
+       */
+       autoprefixer: {
+         options: {
+           browsers: ['last 2 versions']
+         },
+         // prefix all files
+         multiple_files: {
+           expand: true,
+           flatten: true,
+           src: 'compiled/*.css',
+           dest: ''
+         }
+       },
 
     /**
      * Watch task
@@ -41,7 +58,7 @@ module.exports = function (grunt) {
      watch: {
        css: {
          files: '**/*.scss',
-         tasks: ['sass']
+         tasks: ['sass', 'autoprefixer']
        }
      }
 
@@ -50,6 +67,7 @@ module.exports = function (grunt) {
   // tell Grunt to load the different tasks runner we are going to be using
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-autoprefixer');
   // register the Watch task
   grunt.registerTask('default', ['watch']);
 };
