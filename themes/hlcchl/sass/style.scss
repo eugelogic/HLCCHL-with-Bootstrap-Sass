@@ -41,6 +41,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 	## Captions
 	## Galleries
+### TABLE OF CONTENT:
 --------------------------------------------------------------*/
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
@@ -108,3 +109,494 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 --------------------------------------------------------------*/
 @import "media/media";
+
+/*--------------------------------------------------------------
+### TABLE OF CONTENT:
+----------------------------------------------------------------
+ 0.0 COLOUR REFERENCES
+ 1.0 GENERAL
+ 2.0 TYPOGRAPHY
+ 3.0 TOP SECTION
+ 4.0 JUMBOTRONS
+ 5.0 HOMEPAGE WIDGETS
+ 6.0 FOOTER
+ 7.0 EVENTS PAGE
+ 8.0 NEWS INDEX PAGE
+ 8.5 NEWS SINGLE PAGE
+ 9.0 HALL HIRE PAGE
+10.0 NURSERY PAGE
+11.0 ABOUT US PAGE
+12.0 GALLERY PAGE
+13.0 SUPPORT US PAGE
+ X.0 MEDIA QUERIES
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+0.0 COLOUR REFERENCES
+--------------------------------------------------------------*/
+/*
+Green:           #189960   bg & font
+Very light grey: #ededed   bg
+Light grey:      #bfbfbf   font
+Mid grey:        #8c8989   font
+Dark grey:       #333333   font
+Very dark grey:  #282A2B   bg
+*/
+
+/*--------------------------------------------------------------
+1.0 GENERAL
+--------------------------------------------------------------*/
+
+body {
+  font-family: 'PT Sans', Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #333333;
+}
+
+#page-title-bar {
+  max-height: 5.625em;
+  background: url('../img/Holly Lodge Community Centre hompepage banner.jpg') no-repeat fixed center;
+  margin-bottom: 0;
+  h1 {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    margin: 0;
+    margin-top: -0.5em;
+    text-transform: uppercase;
+  }
+}
+
+/*--------------------------------------------------------------
+2.0 TYPOGRAPHY
+--------------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', 'Helvetica' , sans-serif;
+}
+
+a {
+  color: #189960;
+  &:hover {
+    color: #333333;
+  }
+}
+
+/*--------------------------------------------------------------
+3.0 TOP SECTION
+--------------------------------------------------------------*/
+
+#top-bar {
+  text-align: center;
+  color: white;
+  background-color: #189960;
+  line-height: 2.8125em;
+  a {
+    color: white;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+#site-title {
+  min-height: 5.625em;
+  h1 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 1.5em;
+  }
+}
+
+/* MAIN NAV MENU */
+
+nav {
+  border-top: 1px solid #ededed;
+  ul {
+    margin: 30px 0;
+    text-align: center;
+  }
+  li {
+    display: inline;
+    font-family: 'Montserrat', 'Helvetica' , sans-serif;
+    text-transform: uppercase;
+    padding: 0 10px;
+    a {
+      color: #333333;
+      &:hover {
+        text-decoration: none;
+        color: #189960;
+        padding-top: 1.875em;
+        border-top: 3px solid #189960;
+      }
+    }
+    .is-checked {
+      color: #189960;
+      padding-top: 1.875em;
+      border-top: 3px solid #189960;
+    }
+    a:focus {
+      text-decoration: none;
+      color: #189960;
+      padding-top: 1.875em;
+      border-top: 3px solid #189960;
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+4.0 JUMBOTRONS
+--------------------------------------------------------------*/
+
+#hero {
+  min-height: 25em;
+  background: url('../img/Holly Lodge Community Centre hompepage banner.jpg') no-repeat fixed center;
+  margin-bottom: 0;
+  h2, h3 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 0.3125em;
+    text-align: center;
+    border-radius: 0.125em;
+  }
+  h2 {
+    font-size: 3.125em;
+  }
+  .button-group {
+    text-align: center;
+    padding-top: 2em;
+  }
+  .btn {
+    text-transform: uppercase;
+    font-family: 'Montserrat', 'Helvetica' , sans-serif;
+    padding: 1em 2em;
+  }
+  .btn1 {
+    color: white;
+    background-color: #189960;
+    border: none;
+    margin-right: 2em;
+    &:hover {
+      color: #189960;
+      background-color: white;
+      border: none;
+    }
+  }
+  .btn2 {
+    color: #189960;
+    background-color: white;
+    border: none;
+    &:hover {
+      color: white;
+      background-color: #189960;
+      border: none;
+    }
+  }
+}
+
+/* LATEST NEWS */
+
+#latest {
+  text-align: center;
+  .latest-top {
+    border-bottom: 1px solid #333333;
+    padding-bottom: 2em;
+  }
+  .latest-bottom {
+    padding-top: 3em;
+  }
+}
+
+/*--------------------------------------------------------------
+5.0 HOMEPAGE WIDGETS
+--------------------------------------------------------------*/
+
+#hp-widgets {
+  padding: 2.25em 0 5em;
+  h3 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .btn-case {
+    margin-top: 2em;
+    text-align: center;
+  }
+  .btn {
+    color: white;
+    background-color: #189960;
+    border: none;
+    text-transform: uppercase;
+    font-family: 'Montserrat', 'Helvetica' , sans-serif;
+    padding: 1em 2em;
+    &:hover {
+      color: #189960;
+      background-color: white;
+      border: 1px solid #189960;
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+6.0 FOOTER
+--------------------------------------------------------------*/
+
+footer {
+  text-align: center;
+  color: #8c8989;
+  background-color: #282A2B;
+  min-height: 4em;
+  p {
+    font-size: 0.75em;
+    margin-top: 1.5em;
+  }
+  a {
+    color: #bfbfbf;
+    &:hover {
+      color: #8c8989;
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+7.0 EVENTS PAGE
+--------------------------------------------------------------*/
+
+#calendar-intro h3 {
+  text-align: center;
+  line-height: 1.5em;
+  padding: 2em 0 2em;
+}
+
+#calendar {
+  min-height: 16em;
+  text-align: center;
+  background-color: #ededed;
+  padding-top: 3em;
+}
+
+/*--------------------------------------------------------------
+8.0 NEWS INDEX PAGE
+--------------------------------------------------------------*/
+
+#news-index-grid {
+  margin: 3em 0;
+  img {
+    width: 100%;
+  }
+  .news-wrapper {
+    border: 1px solid #ededed;
+  }
+  .news-meta {
+    padding: 1.5em;
+  }
+  .news-separator {
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    height: 0.375em;
+    margin: 1em 0;
+  }
+  .read-more {
+    font-size: 0.85em;
+    text-decoration: none;
+    &::after {
+      content: "\21D2";
+      margin-left: 0.5em;
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+8.5 NEWS SINGLE PAGE
+--------------------------------------------------------------*/
+
+#news-single {
+  margin: 3em 0;
+  img {
+    width: 100%;
+  }
+  p {
+    margin: 2em 0;
+  }
+  .small {
+    padding: 0.75em 0;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+  }
+  .prev-next {
+    font-size: 85%;
+    margin-top: -2em;
+    padding: 0.75em 0;
+    border-bottom: 1px solid #ededed;
+    a:hover {
+      text-decoration: none;
+    }
+  }
+  .prev::before {
+    content: "\21D0";
+    margin-right: 0.5em;
+  }
+  .next {
+    float: right;
+    &::after {
+      content: "\21D2";
+      margin-left: 0.5em;
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+9.0 HALL HIRE PAGE
+--------------------------------------------------------------*/
+
+#blurb-and-map {
+  margin: 3em 0;
+}
+
+#hall-gallery {
+  margin-bottom: 2em;
+  h3 {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+#bottom-cta {
+  color: white;
+  background-color: #189960;
+  margin-bottom: 0;
+  h3 {
+    text-align: right;
+  }
+  .btn-case {
+    text-align: left;
+  }
+  .btn {
+    color: #189960;
+    background-color: white;
+    border: 1px solid white;
+    margin-top: 0.75em;
+    text-transform: uppercase;
+    font-family: 'Montserrat', 'Helvetica' , sans-serif;
+    padding: 1em 2em;
+    &:hover {
+      color: white;
+      background-color: #189960;
+      border: 1px solid white;
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+10.0 NURSERY PAGE
+--------------------------------------------------------------*/
+
+#blurb {
+  min-height: 30em;
+  margin: 3em 0;
+}
+
+/*--------------------------------------------------------------
+11.0 ABOUT US PAGE
+--------------------------------------------------------------*/
+
+#about-top-section h3, #about-map-section h3, #about-bottom-section h3 {
+  margin-top: 0;
+}
+
+#about-top-section {
+  margin: 3em 0;
+  img {
+    width: 100%;
+  }
+}
+
+#map-section {
+  text-align: center;
+  margin: 3em 0;
+}
+
+#about-bottom-section {
+  margin: 3em 0;
+  img {
+    width: 100%;
+    padding-bottom: 2em;
+  }
+}
+
+/*--------------------------------------------------------------
+12.0 GALLERY PAGE
+--------------------------------------------------------------*/
+
+#gallery {
+  min-height: 30em;
+  margin: 3em 0;
+  h3 {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+/*--------------------------------------------------------------
+13.0 SUPPORT US PAGE
+--------------------------------------------------------------*/
+
+#support-top-section {
+  margin: 3em 0;
+}
+
+#support-ctas {
+  margin: 3em 0;
+  h4 {
+    text-align: center;
+  }
+  .btn-case {
+    margin-top: 1em;
+    text-align: center;
+  }
+  .btn-left {
+    color: white;
+    background-color: #189960;
+    border: 1px solid #189960;
+    text-transform: uppercase;
+    font-family: 'Montserrat', 'Helvetica' , sans-serif;
+    padding: 1em 2em;
+    &:hover {
+      color: #189960;
+      background-color: white;
+      border: 1px solid #189960;
+    }
+  }
+  .btn-right {
+    margin-top: 1.6em;
+    color: #189960;
+    background-color: white;
+    border: 1px solid #189960;
+    text-transform: uppercase;
+    font-family: 'Montserrat', 'Helvetica' , sans-serif;
+    padding: 1em 2em;
+    &:hover {
+      color: white;
+      background-color: #189960;
+      border: 1px solid #189960;
+    }
+  }
+}
+
+#support-join-us {
+  margin: 3em 0;
+  img {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/*--------------------------------------------------------------
+X.0 MEDIA QUERIES
+--------------------------------------------------------------*/
