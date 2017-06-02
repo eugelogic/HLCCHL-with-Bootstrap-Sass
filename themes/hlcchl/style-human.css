@@ -445,7 +445,7 @@ body {
 
 #page-title-bar {
   max-height: 5.625em;
-  background: url("../img/Holly Lodge Community Centre hompepage banner.jpg") no-repeat fixed center;
+  background: url("/wp-content/themes/hlcchl/assets/img/Holly Lodge Community Centre page title bg.jpg") no-repeat fixed center;
   margin-bottom: 0;
 }
 #page-title-bar h1 {
@@ -537,7 +537,7 @@ nav li a:focus {
 --------------------------------------------------------------*/
 #hero {
   min-height: 25em;
-  background: url("../img/Holly Lodge Community Centre hompepage banner.jpg") no-repeat fixed center;
+  background: url("/wp-content/themes/hlcchl/assets/img/Holly Lodge Community Centre hompepage banner.jpg") no-repeat fixed center;
   margin-bottom: 0;
 }
 #hero h2, #hero h3 {
