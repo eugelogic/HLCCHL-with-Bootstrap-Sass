@@ -105,15 +105,25 @@ add_action( 'widgets_init', 'hlcchl_widgets_init' );
  * Enqueue scripts and styles.
  */
 function hlcchl_scripts() {
-	wp_enqueue_style( 'hlcchl-style', get_stylesheet_uri() );
-
+	// Default entries of _S
+	wp_enqueue_style( 'hlcchl-style', get_stylesheet_uri(), array('bootstrap_css') );
 	wp_enqueue_script( 'hlcchl-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-
 	wp_enqueue_script( 'hlcchl-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
-
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	// Eugene's entries
+ wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/assets/css/bootstrap.min.css');
+ wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery'), '20170602', true );
+ wp_enqueue_style( 'google_fonts', 'https://fonts.googleapis.com/css?family=Montserrat:400,700|PT+Sans');
+
+ // Support for IE9
+ global $wp_scripts;
+ wp_register_script('html5_shiv', 'https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js', '', '', false );
+ wp_register_script('respond_js', 'https://oss.maxcdn.com/respond/1.4.2/respond.min.js', '', '', false );
+ $wp_scripts->add_data('html5_shiv', 'conditional', 'lt IE 9');
+ $wp_scripts->add_data('respond_js', 'conditional', 'lt IE 9');
 }
 add_action( 'wp_enqueue_scripts', 'hlcchl_scripts' );
 
