@@ -1,4 +1,4 @@
-# HLCCHL Custom Website
+# Holly Lodge Community Centre - Highgate London, Custom Website
 
 See it in action here <a href="#" target="_blank">http://...</a>
 
