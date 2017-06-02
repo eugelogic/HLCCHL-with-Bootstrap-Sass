@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/eugelogic/HLCCHL-with-Bootstrap-Sass/issues"
   },
-  "homepage": "https://github.com/eugelogic/HLCCHL-with-Bootstrap-Sass#readme"
+  "homepage": "https://github.com/eugelogic/HLCCHL-with-Bootstrap-Sass#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1"
+  }
 }
