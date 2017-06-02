@@ -1,0 +1,24 @@
+{
+  "name": "hlcchl",
+  "version": "1.0.0",
+  "description": "Holly Lodge Community Centre - Highgate London, custom website WordPress theme with Underscores, Bootstrap & Sass.",
+  "main": "index.php",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eugelogic/HLCCHL-with-Bootstrap-Sass.git"
+  },
+  "keywords": [
+    "WordPress",
+    "Underscores",
+    "Bootstrap",
+    "Sass",
+    "Grunt",
+    "autoprefixer"
+  ],
+  "author": "Eugene Molari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eugelogic/HLCCHL-with-Bootstrap-Sass/issues"
+  },
+  "homepage": "https://github.com/eugelogic/HLCCHL-with-Bootstrap-Sass#readme"
+}
