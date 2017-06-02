@@ -23,27 +23,43 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'hlcchl' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<?php
-			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php
-			endif;
+	<!-- HEADER
+	================================================== -->
+	<header class="site-header" role="banner">
 
-			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-			<?php
-			endif; ?>
-		</div><!-- .site-branding -->
+    <!-- TOP BAR
+    ================================================== -->
+    <section id="top-bar">
+      <div class="container">
+        Call Us on
+        <a href="tel:02083429524">0208 342 9524</a>
+        -
+        Send Us an Email <a href="mailto:hollylodgelondon@hotmail.com">hollylodgelondon@hotmail.com</a>
+      </div><!-- container -->
+    </section>
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'hlcchl' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+    <!-- SITE TITLE
+    ================================================== -->
+    <section id="site-title">
+      <div class="container">
+        <h1>Holly Lodge Community Centre - Highgate London</h1>
+      </div><!-- container -->
+    </section>
 
-	<div id="content" class="site-content">
+    <!-- MAIN NAV MENU
+    ================================================== -->
+    <nav>
+      <div class="container">
+      	<ul>
+          <li><a href="index.html" class="is-checked">Home</a></li>
+          <li><a href="events.html">What's On</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="hall-hire.html">Hall Hire</a></li>
+          <li><a href="nursery.html">Nursery</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+          <li><a href="support-us.html">Support Us</a></li>
+        </ul>
+      </div><!-- container -->
+    </nav>
+
+  </header>
