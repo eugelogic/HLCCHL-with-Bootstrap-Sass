@@ -1,0 +1,55 @@
+module.exports = function (grunt) {
+
+  grunt.initConfig({
+
+    // tell Grunt where the package is and to read it
+    pkg: grunt.file.readJSON('package.json'),
+
+    /**
+     * Sass task
+     */
+     sass: {
+       // dev task with expanded version
+       dev: {
+         options: {
+           style: 'expanded',
+           sourcemap: 'none'
+         },
+         // define where the content comes from and where it's going to go.
+         // The syntax works the other way around here,
+         // first define where you want the content to go
+         // and then specify where the content is coming from.
+         files: {
+           'compiled/style.css': 'sass/style.scss'
+         }
+       },
+       // distribution task, like the "dev" task but with compressed stylesheet version to be shipped with the theme
+       dist: {
+         options: {
+           style: 'compressed',
+           sourcemap: 'none'
+         },
+         files: {
+           'compiled/style-min.css': 'sass/style.scss'
+         }
+       }
+     },
+
+    /**
+     * Watch task
+     */
+     watch: {
+       css: {
+         files: '**/*.scss',
+         tasks: ['sass']
+       }
+     }
+
+  });
+
+  // tell Grunt to load the different tasks runner we are going to be using
+  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  // register the Watch task
+  grunt.registerTask('default', ['watch']);
+};
