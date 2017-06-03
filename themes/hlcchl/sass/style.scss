@@ -150,7 +150,7 @@ body {
   font-family: 'PT Sans', Helvetica, sans-serif;
   font-weight: 400;
   font-size: 16px;
-  color: #333333;
+  color: $dark-grey;
 }
 
 #page-title-bar {
@@ -158,7 +158,7 @@ body {
   background: url('/wp-content/themes/hlcchl/assets/img/Holly Lodge Community Centre page title bg.jpg') no-repeat fixed center;
   margin-bottom: 0;
   h1 {
-    color: white;
+    color: $white;
     font-size: 2em;
     text-align: center;
     margin: 0;
@@ -176,9 +176,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: #189960;
+  color: $green;
   &:hover {
-    color: #333333;
+    color: $dark-grey;
   }
 }
 
@@ -188,11 +188,11 @@ a {
 
 #top-bar {
   text-align: center;
-  color: white;
-  background-color: #189960;
+  color: $white;
+  background-color: $green;
   line-height: 2.8125em;
   a {
-    color: white;
+    color: $white;
     text-decoration: underline;
     &:hover {
       text-decoration: none;
@@ -212,7 +212,7 @@ a {
 /* MAIN NAV MENU */
 
 nav {
-  border-top: 1px solid #ededed;
+  border-top: 1px solid $very-light-grey;
   ul {
     margin: 30px 0;
     text-align: center;
@@ -223,24 +223,24 @@ nav {
     text-transform: uppercase;
     padding: 0 10px;
     a {
-      color: #333333;
+      color: $dark-grey;
       &:hover {
         text-decoration: none;
-        color: #189960;
+        color: $green;
         padding-top: 1.875em;
-        border-top: 3px solid #189960;
+        border-top: 3px solid $green;
       }
     }
     .is-checked {
-      color: #189960;
+      color: $green;
       padding-top: 1.875em;
-      border-top: 3px solid #189960;
+      border-top: 3px solid $green;
     }
     a:focus {
       text-decoration: none;
-      color: #189960;
+      color: $green;
       padding-top: 1.875em;
-      border-top: 3px solid #189960;
+      border-top: 3px solid $green;
     }
   }
 }
@@ -254,8 +254,8 @@ nav {
   background: url('/wp-content/themes/hlcchl/assets/img/Holly Lodge Community Centre hompepage banner.jpg') no-repeat fixed center;
   margin-bottom: 0;
   h2, h3 {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.4);
+    color: $white;
+    background-color: rgba($black, 0.4);
     padding: 0.3125em;
     text-align: center;
     border-radius: 0.125em;
@@ -273,23 +273,23 @@ nav {
     padding: 1em 2em;
   }
   .btn1 {
-    color: white;
-    background-color: #189960;
+    color: $white;
+    background-color: $green;
     border: none;
     margin-right: 2em;
     &:hover {
-      color: #189960;
-      background-color: white;
+      color: $green;
+      background-color: $white;
       border: none;
     }
   }
   .btn2 {
-    color: #189960;
-    background-color: white;
+    color: $green;
+    background-color: $white;
     border: none;
     &:hover {
-      color: white;
-      background-color: #189960;
+      color: $white;
+      background-color: $green;
       border: none;
     }
   }
@@ -300,7 +300,7 @@ nav {
 #latest {
   text-align: center;
   .latest-top {
-    border-bottom: 1px solid #333333;
+    border-bottom: 1px solid $dark-grey;
     padding-bottom: 2em;
   }
   .latest-bottom {
@@ -323,16 +323,16 @@ nav {
     text-align: center;
   }
   .btn {
-    color: white;
-    background-color: #189960;
+    color: $white;
+    background-color: $green;
     border: none;
     text-transform: uppercase;
     font-family: 'Montserrat', 'Helvetica' , sans-serif;
     padding: 1em 2em;
     &:hover {
-      color: #189960;
-      background-color: white;
-      border: 1px solid #189960;
+      color: $green;
+      background-color: $white;
+      border: 1px solid $green;
     }
   }
 }
@@ -343,7 +343,7 @@ nav {
 
 footer {
   text-align: center;
-  color: #8c8989;
+  color: $mid-grey;
   background-color: #282A2B;
   min-height: 4em;
   p {
@@ -351,9 +351,9 @@ footer {
     margin-top: 1.5em;
   }
   a {
-    color: #bfbfbf;
+    color: $light-grey;
     &:hover {
-      color: #8c8989;
+      color: $mid-grey;
     }
   }
 }
@@ -371,7 +371,7 @@ footer {
 #calendar {
   min-height: 16em;
   text-align: center;
-  background-color: #ededed;
+  background-color: $very-light-grey;
   padding-top: 3em;
 }
 
@@ -385,14 +385,14 @@ footer {
     width: 100%;
   }
   .news-wrapper {
-    border: 1px solid #ededed;
+    border: 1px solid $very-light-grey;
   }
   .news-meta {
     padding: 1.5em;
   }
   .news-separator {
-    border-top: 1px solid #ededed;
-    border-bottom: 1px solid #ededed;
+    border-top: 1px solid $very-light-grey;
+    border-bottom: 1px solid $very-light-grey;
     height: 0.375em;
     margin: 1em 0;
   }
@@ -420,14 +420,14 @@ footer {
   }
   .small {
     padding: 0.75em 0;
-    border-top: 1px solid #ededed;
-    border-bottom: 1px solid #ededed;
+    border-top: 1px solid $very-light-grey;
+    border-bottom: 1px solid $very-light-grey;
   }
   .prev-next {
     font-size: 85%;
     margin-top: -2em;
     padding: 0.75em 0;
-    border-bottom: 1px solid #ededed;
+    border-bottom: 1px solid $very-light-grey;
     a:hover {
       text-decoration: none;
     }
@@ -465,8 +465,8 @@ footer {
 }
 
 #bottom-cta {
-  color: white;
-  background-color: #189960;
+  color: $white;
+  background-color: $green;
   margin-bottom: 0;
   h3 {
     text-align: right;
@@ -475,17 +475,17 @@ footer {
     text-align: left;
   }
   .btn {
-    color: #189960;
-    background-color: white;
-    border: 1px solid white;
+    color: $green;
+    background-color: $white;
+    border: 1px solid $white;
     margin-top: 0.75em;
     text-transform: uppercase;
     font-family: 'Montserrat', 'Helvetica' , sans-serif;
     padding: 1em 2em;
     &:hover {
-      color: white;
-      background-color: #189960;
-      border: 1px solid white;
+      color: $white;
+      background-color: $green;
+      border: 1px solid $white;
     }
   }
 }
@@ -561,30 +561,30 @@ footer {
     text-align: center;
   }
   .btn-left {
-    color: white;
-    background-color: #189960;
-    border: 1px solid #189960;
+    color: $white;
+    background-color: $green;
+    border: 1px solid $green;
     text-transform: uppercase;
     font-family: 'Montserrat', 'Helvetica' , sans-serif;
     padding: 1em 2em;
     &:hover {
-      color: #189960;
-      background-color: white;
-      border: 1px solid #189960;
+      color: $green;
+      background-color: $white;
+      border: 1px solid $green;
     }
   }
   .btn-right {
     margin-top: 1.6em;
-    color: #189960;
-    background-color: white;
-    border: 1px solid #189960;
+    color: $green;
+    background-color: $white;
+    border: 1px solid $green;
     text-transform: uppercase;
     font-family: 'Montserrat', 'Helvetica' , sans-serif;
     padding: 1em 2em;
     &:hover {
-      color: white;
-      background-color: #189960;
-      border: 1px solid #189960;
+      color: $white;
+      background-color: $green;
+      border: 1px solid $green;
     }
   }
 }
