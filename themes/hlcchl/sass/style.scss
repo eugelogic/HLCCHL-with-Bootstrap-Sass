@@ -265,18 +265,18 @@ nav {
   }
   .button-group {
     text-align: center;
-    padding-top: 2em;
+    padding-top: $large-spacing;
   }
   .btn {
     text-transform: uppercase;
     font-family: 'Montserrat', 'Helvetica' , sans-serif;
-    padding: 1em 2em;
+    padding: $reg-spacing $large-spacing;
   }
   .btn1 {
     color: $white;
     background-color: $green;
     border: none;
-    margin-right: 2em;
+    margin-right: $large-spacing;
     &:hover {
       color: $green;
       background-color: $white;
@@ -301,10 +301,10 @@ nav {
   text-align: center;
   .latest-top {
     border-bottom: 1px solid $dark-grey;
-    padding-bottom: 2em;
+    padding-bottom: $large-spacing;
   }
   .latest-bottom {
-    padding-top: 3em;
+    padding-top: $very-large-spacing;
   }
 }
 
@@ -319,7 +319,7 @@ nav {
     text-transform: uppercase;
   }
   .btn-case {
-    margin-top: 2em;
+    margin-top: $large-spacing;
     text-align: center;
   }
   .btn {
@@ -328,7 +328,7 @@ nav {
     border: none;
     text-transform: uppercase;
     font-family: 'Montserrat', 'Helvetica' , sans-serif;
-    padding: 1em 2em;
+    padding: $reg-spacing $large-spacing;
     &:hover {
       color: $green;
       background-color: $white;
@@ -365,14 +365,14 @@ footer {
 #calendar-intro h3 {
   text-align: center;
   line-height: 1.5em;
-  padding: 2em 0 2em;
+  padding: $large-spacing 0 $large-spacing;
 }
 
 #calendar {
   min-height: 16em;
   text-align: center;
   background-color: $very-light-grey;
-  padding-top: 3em;
+  padding-top: $very-large-spacing;
 }
 
 /*--------------------------------------------------------------
@@ -380,7 +380,7 @@ footer {
 --------------------------------------------------------------*/
 
 #news-index-grid {
-  margin: 3em 0;
+  margin: $very-large-spacing 0;
   img {
     width: 100%;
   }
@@ -394,7 +394,7 @@ footer {
     border-top: 1px solid $very-light-grey;
     border-bottom: 1px solid $very-light-grey;
     height: 0.375em;
-    margin: 1em 0;
+    margin: $reg-spacing 0;
   }
   .read-more {
     font-size: 0.85em;
@@ -411,12 +411,12 @@ footer {
 --------------------------------------------------------------*/
 
 #news-single {
-  margin: 3em 0;
+  margin: $very-large-spacing 0;
   img {
     width: 100%;
   }
   p {
-    margin: 2em 0;
+    margin: $large-spacing 0;
   }
   .small {
     padding: 0.75em 0;
@@ -425,7 +425,7 @@ footer {
   }
   .prev-next {
     font-size: 85%;
-    margin-top: -2em;
+    margin-top: -$large-spacing;
     padding: 0.75em 0;
     border-bottom: 1px solid $very-light-grey;
     a:hover {
@@ -450,14 +450,14 @@ footer {
 --------------------------------------------------------------*/
 
 #blurb-and-map {
-  margin: 3em 0;
+  margin: $very-large-spacing 0;
 }
 
 #hall-gallery {
-  margin-bottom: 2em;
+  margin-bottom: $large-spacing;
   h3 {
     text-align: center;
-    margin-bottom: 2em;
+    margin-bottom: $large-spacing;
   }
   img {
     width: 100%;
@@ -481,7 +481,7 @@ footer {
     margin-top: 0.75em;
     text-transform: uppercase;
     font-family: 'Montserrat', 'Helvetica' , sans-serif;
-    padding: 1em 2em;
+    padding: $reg-spacing $large-spacing;
     &:hover {
       color: $white;
       background-color: $green;
@@ -496,7 +496,7 @@ footer {
 
 #blurb {
   min-height: 30em;
-  margin: 3em 0;
+  margin: $very-large-spacing 0;
 }
 
 /*--------------------------------------------------------------
@@ -508,7 +508,7 @@ footer {
 }
 
 #about-top-section {
-  margin: 3em 0;
+  margin: $very-large-spacing 0;
   img {
     width: 100%;
   }
@@ -516,14 +516,14 @@ footer {
 
 #map-section {
   text-align: center;
-  margin: 3em 0;
+  margin: $very-large-spacing 0;
 }
 
 #about-bottom-section {
-  margin: 3em 0;
+  margin: $very-large-spacing 0;
   img {
     width: 100%;
-    padding-bottom: 2em;
+    padding-bottom: $large-spacing;
   }
 }
 
@@ -533,10 +533,10 @@ footer {
 
 #gallery {
   min-height: 30em;
-  margin: 3em 0;
+  margin: $very-large-spacing 0;
   h3 {
     text-align: center;
-    margin-bottom: 2em;
+    margin-bottom: $large-spacing;
   }
   img {
     width: 100%;
@@ -548,16 +548,16 @@ footer {
 --------------------------------------------------------------*/
 
 #support-top-section {
-  margin: 3em 0;
+  margin: $very-large-spacing 0;
 }
 
 #support-ctas {
-  margin: 3em 0;
+  margin: $very-large-spacing 0;
   h4 {
     text-align: center;
   }
   .btn-case {
-    margin-top: 1em;
+    margin-top: $reg-spacing;
     text-align: center;
   }
   .btn-left {
@@ -566,7 +566,7 @@ footer {
     border: 1px solid $green;
     text-transform: uppercase;
     font-family: 'Montserrat', 'Helvetica' , sans-serif;
-    padding: 1em 2em;
+    padding: $reg-spacing $large-spacing;
     &:hover {
       color: $green;
       background-color: $white;
@@ -580,7 +580,7 @@ footer {
     border: 1px solid $green;
     text-transform: uppercase;
     font-family: 'Montserrat', 'Helvetica' , sans-serif;
-    padding: 1em 2em;
+    padding: $reg-spacing $large-spacing;
     &:hover {
       color: $white;
       background-color: $green;
@@ -590,7 +590,7 @@ footer {
 }
 
 #support-join-us {
-  margin: 3em 0;
+  margin: $very-large-spacing 0;
   img {
     text-align: center;
     width: 100%;
