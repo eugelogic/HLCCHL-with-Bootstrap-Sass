@@ -267,15 +267,8 @@ nav {
     text-align: center;
     padding-top: $large-spacing;
   }
-  .btn {
-    text-transform: uppercase;
-    font-family: 'Montserrat', 'Helvetica' , sans-serif;
-    padding: $reg-spacing $large-spacing;
-  }
   .btn1 {
-    color: $white;
-    background-color: $green;
-    border: none;
+    @include green-button();
     margin-right: $large-spacing;
     &:hover {
       color: $green;
@@ -284,9 +277,7 @@ nav {
     }
   }
   .btn2 {
-    color: $green;
-    background-color: $white;
-    border: none;
+    @include white-button();
     &:hover {
       color: $white;
       background-color: $green;
@@ -323,12 +314,7 @@ nav {
     text-align: center;
   }
   .btn {
-    color: $white;
-    background-color: $green;
-    border: none;
-    text-transform: uppercase;
-    font-family: 'Montserrat', 'Helvetica' , sans-serif;
-    padding: $reg-spacing $large-spacing;
+    @include green-button();
     &:hover {
       color: $green;
       background-color: $white;
@@ -475,13 +461,7 @@ footer {
     text-align: left;
   }
   .btn {
-    color: $green;
-    background-color: $white;
-    border: 1px solid $white;
-    margin-top: 0.75em;
-    text-transform: uppercase;
-    font-family: 'Montserrat', 'Helvetica' , sans-serif;
-    padding: $reg-spacing $large-spacing;
+    @include white-button();
     &:hover {
       color: $white;
       background-color: $green;
@@ -561,12 +541,7 @@ footer {
     text-align: center;
   }
   .btn-left {
-    color: $white;
-    background-color: $green;
-    border: 1px solid $green;
-    text-transform: uppercase;
-    font-family: 'Montserrat', 'Helvetica' , sans-serif;
-    padding: $reg-spacing $large-spacing;
+    @include green-button();
     &:hover {
       color: $green;
       background-color: $white;
@@ -575,12 +550,7 @@ footer {
   }
   .btn-right {
     margin-top: 1.6em;
-    color: $green;
-    background-color: $white;
-    border: 1px solid $green;
-    text-transform: uppercase;
-    font-family: 'Montserrat', 'Helvetica' , sans-serif;
-    padding: $reg-spacing $large-spacing;
+    @include white-button();
     &:hover {
       color: $white;
       background-color: $green;

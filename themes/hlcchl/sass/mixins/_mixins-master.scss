@@ -22,3 +22,23 @@
 @mixin clearfix-after() {
 	clear: both;
 }
+
+// Green button
+@mixin green-button() {
+	color: $white;
+	background-color: $green;
+	border: 1px solid $green;
+	text-transform: uppercase;
+	font-family: 'Montserrat', 'Helvetica' , sans-serif;
+	padding: $reg-spacing $large-spacing;
+}
+
+// White button
+@mixin white-button() {
+	color: $green;
+	background-color: $white;
+	border: 1px solid $white;
+	text-transform: uppercase;
+	font-family: 'Montserrat', 'Helvetica' , sans-serif;
+	padding: $reg-spacing $large-spacing;
+}
