@@ -168,7 +168,7 @@ body {
   }
 }
 
-/*--------------------------------------------------------------
+/*-------------------------------------------------------------
 2.0 TYPOGRAPHY
 --------------------------------------------------------------*/
 
@@ -252,7 +252,7 @@ nav {
 
 #hero {
   min-height: 25em;
-  background: url('/wp-content/themes/hlcchl/assets/img/Holly Lodge Community Centre hompepage banner.jpg') no-repeat fixed center;
+  /*background: url('/wp-content/themes/hlcchl/assets/img/Holly Lodge Community Centre hompepage banner.jpg') no-repeat fixed center;*/
   margin-bottom: 0;
   h2, h3 {
     color: $white;
@@ -267,22 +267,21 @@ nav {
   .button-group {
     text-align: center;
     padding-top: $large-spacing;
+    p {
+      display: inline-block;
+    }
   }
   .btn1 {
     @include green-button();
     margin-right: $large-spacing;
     &:hover {
-      color: $green;
-      background-color: $white;
-      border: none;
+      @include white-button();
     }
   }
   .btn2 {
     @include white-button();
     &:hover {
-      color: $white;
-      background-color: $green;
-      border: none;
+      @include green-button();
     }
   }
 }
