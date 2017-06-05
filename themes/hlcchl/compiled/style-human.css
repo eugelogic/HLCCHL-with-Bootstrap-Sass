@@ -67,9 +67,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 a {
   color: #189960;
 }
-a:visited {
-  color: #189960;
-}
 a:hover, a:focus, a:active {
   color: #333333;
 }
