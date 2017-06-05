@@ -11,13 +11,13 @@ get_header(); ?>
 
 <!-- HERO BANNER WITH CTA
 ================================================== -->
-<div class="jumbotron" id="hero">
+<div class="jumbotron" id="hero" style="background: url('<?php the_field('img_background'); ?>') no-repeat fixed center;">
   <div class="container">
-    <h2>By the community for the community</h2>
-    <h3> The Holly Lodge Community Centre offers a whole range of activities in a friendly, relaxed environment. We also offer space to hire for events.</h3>
+    <h2><?php the_field('hero_title'); ?></h2>
+    <h3><?php the_field('hero_copy'); ?></h3>
     <div class="button-group">
-      <button type="button" class="btn btn-default btn1">What's On</button>
-      <button type="button" class="btn btn-default btn2">Donate</button>
+      <p><a href="<?php the_field('left_btn_url'); ?>" class="btn btn-default btn1" role="button"><?php the_field('left_btn_text'); ?></a></p>
+      <p><a href="<?php the_field('right_btn_url'); ?>" target="_blank" class="btn btn-default btn2" role="button"><?php the_field('right_btn_text'); ?></a></p>
     </div><!-- button-group -->
   </div><!-- container -->
 </div><!-- jumbo -->
