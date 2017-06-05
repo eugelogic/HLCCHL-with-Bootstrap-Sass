@@ -13,7 +13,7 @@ Tags:
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-HLCCHL is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+HLCCHL is based on Underscores http://underscores.me/, (C) 2012-2017 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -40,7 +40,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 	## Captions
 	## Galleries
-### TABLE OF CONTENT:
+### THEME SPECIFIC STYLES:
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
@@ -403,7 +403,7 @@ object {
 }
 
 /*--------------------------------------------------------------
-### TABLE OF CONTENT:
+### THEME SPECIFIC STYLES:
 ----------------------------------------------------------------
  0.0 COLOUR REFERENCES
  1.0 GENERAL
@@ -426,12 +426,14 @@ object {
 0.0 COLOUR REFERENCES
 --------------------------------------------------------------*/
 /*
-Green:           #189960   bg & font
-Very light grey: #ededed   bg
-Light grey:      #bfbfbf   font
-Mid grey:        #8c8989   font
-Dark grey:       #333333   font
-Very dark grey:  #282A2B   bg
+$white:           #ffffff; // bg & font
+$black:           #000000; // bg w opacity
+$green:           #189960; // bg & font
+$very-light-grey: #ededed; // bg
+$light-grey:      #bfbfbf; // font
+$mid-grey:        #8c8989; // font
+$dark-grey:       #333333; //font
+$very-dark-grey:  #282A2B; // bg
 */
 /*--------------------------------------------------------------
 1.0 GENERAL
