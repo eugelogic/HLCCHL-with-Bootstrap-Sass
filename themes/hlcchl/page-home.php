@@ -26,14 +26,8 @@ get_header(); ?>
 ================================================== -->
 <div class="jumbotron" id="latest">
   <div class="container">
-    <div class="latest-top">
-      <h3>LATEST ANNOUNCEMENTS:</h3>
-      <p>The Holly Lodge Community Centre has had a makeover !</p>
-    </div>
-    <div class="latest-bottom">
-      <p>Join us for The Monday Lunch at Holly Lodge Community Centre.<br />
-       Doors open at noon, lunch served at 12:30.</p>
-    </div>
+    <div class="latest-top"><?php the_field('latest_top_part'); ?></div>
+    <div class="latest-bottom"><?php the_field('latest_bottom_part'); ?></div>
   </div><!-- container -->
 </div><!-- jumbo -->
 

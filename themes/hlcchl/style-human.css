@@ -456,7 +456,7 @@ body {
   text-transform: uppercase;
 }
 
-/*-------------------------------------------------------------
+/*--------------------------------------------------------------
 2.0 TYPOGRAPHY
 --------------------------------------------------------------*/
 h1, h2, h3, h4, h5, h6 {
@@ -536,7 +536,6 @@ nav li a:focus {
 --------------------------------------------------------------*/
 #hero {
   min-height: 25em;
-  /*background: url('/wp-content/themes/hlcchl/assets/img/Holly Lodge Community Centre hompepage banner.jpg') no-repeat fixed center;*/
   margin-bottom: 0;
 }
 #hero h2, #hero h3 {
@@ -591,9 +590,6 @@ nav li a:focus {
 }
 
 /* LATEST NEWS */
-#latest {
-  text-align: center;
-}
 #latest .latest-top {
   border-bottom: 1px solid #333333;
   padding-bottom: 2em;
