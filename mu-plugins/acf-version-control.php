@@ -143,4 +143,48 @@ if(function_exists("register_field_group"))
 		),
 		'menu_order' => 0,
 	));
+	register_field_group(array (
+		'id' => 'acf_homepage-latest-news-section',
+		'title' => 'Homepage Latest News Section',
+		'fields' => array (
+			array (
+				'key' => 'field_593580daf2b9d',
+				'label' => '"Latest News" top part',
+				'name' => 'latest_top_part',
+				'type' => 'wysiwyg',
+				'instructions' => 'Add here below the latest news.',
+				'default_value' => '',
+				'toolbar' => 'full',
+				'media_upload' => 'yes',
+			),
+			array (
+				'key' => 'field_59358117f2b9e',
+				'label' => '"Latest News" bottom part',
+				'name' => 'latest_bottom_part',
+				'type' => 'wysiwyg',
+				'instructions' => 'Add here below some more news.',
+				'default_value' => '',
+				'toolbar' => 'full',
+				'media_upload' => 'yes',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'page',
+					'operator' => '==',
+					'value' => '5',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'default',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 1,
+	));
 }
