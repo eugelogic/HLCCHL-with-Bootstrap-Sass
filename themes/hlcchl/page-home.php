@@ -39,34 +39,49 @@ get_header(); ?>
 
       <!-- 1st column
       ================================================== -->
+      <!-- ACF init and vars -->
+      <?php
+        $left_widget_image = get_field('left_widget_image');
+        $left_widget_image_alt = $left_widget_image['left_widget_image_alt'];
+      ?>
       <div class="col-md-4">
-        <a href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/placeholder.jpg" alt="image placeholder"></a>
-        <h3>Activities</h3>
-        <p>Come participate in one of our many activities! Among our current class offerings you’ll find Judo, yoga, and art. Attend WI and other local meetings, as well as a variety of other events. Have a look at our calendar to find out what’s on, and when.</p>
+        <a href="<?php the_field('left_widget_link'); ?>"><img src="<?php echo $left_widget_image['url']; ?>" alt="<?php echo $left_widget_image['alt']; ?>"></a>
+        <h3><?php the_field('left_widget_title'); ?></h3>
+        <p><?php the_field('left_widget_copy'); ?></p>
         <div class="btn-case">
-          <button type="button" class="btn btn-default">What's On</button>
+          <p><a href="<?php the_field('left_widget_link'); ?>" class="btn btn-default" role="button"><?php the_field('left_widget_button_text'); ?></a></p>
         </div><!-- btn-case -->
       </div><!-- col -->
 
       <!-- 2nd column
       ================================================== -->
+      <!-- ACF init and vars -->
+      <?php
+        $central_widget_image = get_field('central_widget_image');
+        $central_widget_image_alt = $central_widget_image['central_widget_image_alt'];
+      ?>
       <div class="col-md-4">
-        <a href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/placeholder.jpg" alt="image placeholder"></a>
-        <h3>Volunteer</h3>
-        <p>Enjoy volunteering, or want to give it a go? Have a skill set you want to share, or just want to help out? We always need motivated volunteers. Get in touch via our Support Us page.</p>
+        <a href="<?php the_field('central_widget_link'); ?>"><img src="<?php echo $central_widget_image['url']; ?>" alt="<?php echo $central_widget_image['alt']; ?>"></a>
+        <h3><?php the_field('central_widget_title'); ?></h3>
+        <p><?php the_field('central_widget_copy'); ?></p>
         <div class="btn-case">
-          <button type="button" class="btn btn-default">Support</button>
+          <p><a href="<?php the_field('central_widget_link'); ?>" class="btn btn-default" role="button"><?php the_field('central_widget_button_text'); ?></a></p>
         </div><!-- btn-case -->
       </div><!-- col -->
 
       <!-- 3rd column
       ================================================== -->
+      <!-- ACF init and vars -->
+      <?php
+        $right_widget_image = get_field('right_widget_image');
+        $right_widget_image_alt = $right_widget_image['right_widget_image_alt'];
+      ?>
       <div class="col-md-4">
-        <a href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/placeholder.jpg" alt="image placeholder"></a>
-        <h3>Hall Hire</h3>
-        <p>We have an attractive, newly refurbished space for hire, with a commercial style kitchen and a lovely terrace. If you would like to hold lectures, classes, workshops, seminars, meetings, parties, or other events, do get in touch.</p>
+        <a href="<?php the_field('right_widget_link'); ?>"><img src="<?php echo $right_widget_image['url']; ?>" alt="<?php echo $right_widget_image['alt']; ?>"></a>
+        <h3><?php the_field('right_widget_title'); ?></h3>
+        <p><?php the_field('right_widget_copy'); ?></p>
         <div class="btn-case">
-          <button type="button" class="btn btn-default">Hall Hire</button>
+          <p><a href="<?php the_field('right_widget_link'); ?>" class="btn btn-default" role="button"><?php the_field('right_widget_button_text'); ?></a></p>
         </div><!-- btn-case -->
       </div><!-- col -->
 

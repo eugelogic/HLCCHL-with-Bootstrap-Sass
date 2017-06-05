@@ -314,9 +314,7 @@ nav {
   .btn {
     @include green-button();
     &:hover {
-      color: $green;
-      background-color: $white;
-      border: 1px solid $green;
+      @include white-button();
     }
   }
 }
