@@ -623,10 +623,7 @@ nav li a:focus {
 #hp-widgets .btn:hover {
   color: #189960;
   background-color: #ffffff;
-  border: 1px solid #ffffff;
-  text-transform: uppercase;
-  font-family: 'Montserrat', 'Helvetica' , sans-serif;
-  padding: 1em 2em;
+  border: 1px solid #189960;
 }
 
 /*--------------------------------------------------------------
