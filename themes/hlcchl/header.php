@@ -57,13 +57,13 @@
     <nav>
       <div class="container">
       	<ul>
-          <li><a href="index.html" class="is-checked">Home</a></li>
-          <li><a href="events.html">What's On</a></li>
-          <li><a href="news.html">News</a></li>
-          <li><a href="hall-hire.html">Hall Hire</a></li>
-          <li><a href="nursery.html">Nursery</a></li>
-          <li><a href="contact-us.html">Contact Us</a></li>
-          <li><a href="support-us.html">Support Us</a></li>
+          <li><a href="/" class="is-checked">Home</a></li>
+          <li><a href="/whats-on/">What's On</a></li>
+          <li><a href="/news/">News</a></li>
+          <li><a href="/community-centre-hall-hire/">Hall Hire</a></li>
+          <li><a href="/nursery/">Nursery</a></li>
+          <li><a href="/contact-us/">Contact Us</a></li>
+          <li><a href="/support-us/">Support Us</a></li>
         </ul>
       </div><!-- container -->
     </nav>
