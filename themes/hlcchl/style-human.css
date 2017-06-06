@@ -769,6 +769,7 @@ footer a:hover {
   text-transform: uppercase;
   font-family: 'Montserrat', 'Helvetica' , sans-serif;
   padding: 1em 2em;
+  margin-top: 0.75em;
 }
 #bottom-cta .btn:hover {
   color: #ffffff;
