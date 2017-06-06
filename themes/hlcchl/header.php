@@ -68,4 +68,14 @@
       </div><!-- container -->
     </nav>
 
+		<?php if (! is_front_page()) : ?>
+		 <!-- PAGE TITLE BAR
+	   ================================================== -->
+	   <div class="jumbotron" id="page-title-bar">
+	     <div class="container">
+	       <h1><?php the_title(); ?></h1>
+	     </div><!-- container -->
+	   </div><!-- jumbo -->
+		<?php endif;?>
+
   </header>
