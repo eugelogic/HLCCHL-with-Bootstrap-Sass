@@ -365,11 +365,15 @@ footer {
 
 #news-index-grid {
   margin: $very-large-spacing 0;
-  img {
-    width: 100%;
-  }
   .news-wrapper {
     border: 1px solid $very-light-grey;
+    margin-bottom: 2em;
+  }
+  .wp-post-image {
+    height: 16.875em;
+  }
+  img {
+    width: 100%;
   }
   .news-meta {
     padding: 1.5em;
