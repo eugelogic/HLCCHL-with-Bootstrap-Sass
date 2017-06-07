@@ -668,11 +668,15 @@ footer a:hover {
 #news-index-grid {
   margin: 3em 0;
 }
-#news-index-grid img {
-  width: 100%;
-}
 #news-index-grid .news-wrapper {
   border: 1px solid #ededed;
+  margin-bottom: 2em;
+}
+#news-index-grid .wp-post-image {
+  height: 16.875em;
+}
+#news-index-grid img {
+  width: 100%;
 }
 #news-index-grid .news-meta {
   padding: 1.5em;
