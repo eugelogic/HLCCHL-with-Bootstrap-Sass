@@ -54,7 +54,7 @@
 
     <!-- MAIN NAV MENU
     ================================================== -->
-    <nav>
+    <nav id="hlcchl-main-nav">
       <div class="container">
       	<ul>
           <li><a href="/" class="is-checked">Home</a></li>

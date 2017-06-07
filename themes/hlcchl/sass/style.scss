@@ -212,7 +212,7 @@ a {
 
 /* MAIN NAV MENU */
 
-nav {
+#hlcchl-main-nav {
   border-top: 1px solid $very-light-grey;
   ul {
     margin: 30px 0;
@@ -400,35 +400,28 @@ footer {
 
 #news-single {
   margin: $very-large-spacing 0;
-  img {
+  .wp-post-image {
     width: 100%;
   }
   p {
     margin: $large-spacing 0;
+    &:first-child {
+      margin-top: -0.5em;
+    }
   }
   .small {
-    padding: 0.75em 0;
+    padding: 0.5em 0;
     border-top: 1px solid $very-light-grey;
     border-bottom: 1px solid $very-light-grey;
   }
   .prev-next {
     font-size: 85%;
-    margin-top: -$large-spacing;
-    padding: 0.75em 0;
+    margin-top: -1.5em;
+    padding: 0.5em 0 2em;
+    border-top: 1px solid $very-light-grey;
     border-bottom: 1px solid $very-light-grey;
     a:hover {
       text-decoration: none;
-    }
-  }
-  .prev::before {
-    content: "\21D0";
-    margin-right: 0.5em;
-  }
-  .next {
-    float: right;
-    &::after {
-      content: "\21D2";
-      margin-left: 0.5em;
     }
   }
 }
