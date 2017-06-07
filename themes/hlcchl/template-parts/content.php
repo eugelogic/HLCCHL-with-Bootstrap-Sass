@@ -10,21 +10,23 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+	<header>
 		<?php
 		if ( is_single() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
+			the_title( '<h2 class="entry-title">', '</h2>' );
 		else :
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
 
 		if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
+		<div class="small">
 			<?php hlcchl_posted_on(); ?>
-		</div><!-- .entry-meta -->
+			<!-- The following was created in functions.php -->
+			<?php hlcchl_post_cats(); ?>
+		</div><!-- .small -->
 		<?php
 		endif; ?>
-	</header><!-- .entry-header -->
+	</header>
 
 	<div class="entry-content">
 		<?php
@@ -33,15 +35,7 @@
 				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'hlcchl' ), array( 'span' => array( 'class' => array() ) ) ),
 				the_title( '<span class="screen-reader-text">"', '"</span>', false )
 			) );
-
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'hlcchl' ),
-				'after'  => '</div>',
-			) );
 		?>
 	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php hlcchl_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+	<div class="prev-next"><?php the_post_navigation(); ?></div>
 </article><!-- #post-## -->

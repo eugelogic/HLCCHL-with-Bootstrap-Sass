@@ -46,14 +46,14 @@
 						 <a href="<?php the_permalink(); ?>" class="read-more">Read More</a>
 					 </div><!-- news-meta -->
 				 </div><!-- news-wrapper -->
-			 		</div><!-- col -->
+			 </div><!-- col -->
 
 		 			<?php endwhile; ?>
 
 					<?php endif;  ?>
 
-							</div><!-- row -->
-					</div><!-- col -->
+						</div><!-- row -->
+				</div><!-- col -->
 
 				<!-- SIDEBAR
 				================================================== -->

@@ -9,27 +9,47 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<section id="news-single">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="row">
 
-		<?php
-		while ( have_posts() ) : the_post();
+					<!-- Start the Loop -->
+					<?php while ( have_posts() ) : the_post(); ?>
 
-			get_template_part( 'template-parts/content', get_post_format() );
+					<!-- NEWS ARTICLE CONTENT
+					================================================== -->
+					<?php if ( has_post_thumbnail() ) : the_post_thumbnail(); ?>
+ 					 <?php endif; ?>
 
-			the_post_navigation();
+					<?php get_template_part( 'template-parts/content', get_post_format() ); ?>
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+					<?php
+					/**
+					 *		// If comments are open or we have at least one comment, load up the comment template.
+					 *		if ( comments_open() || get_comments_number() ) :
+					 *			comments_template();
+					 * 		endif; ?>
+					 */
+					 ?>
 
-		endwhile; // End of the loop.
-		?>
+					<?php endwhile; // End of the loop. ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+				</div><!-- row -->
+			</div><!-- col -->
+
+			<!-- SIDEBAR
+			================================================== -->
+			<div class="row">
+				<aside class="col-sm-4">
+					<?php get_sidebar();?>
+				</aside>
+			</div><!-- row -->
+
+		</div><!-- row -->
+	</div><!-- container -->
+</section>
 
 <?php
-get_sidebar();
 get_footer();
