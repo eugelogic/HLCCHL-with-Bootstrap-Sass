@@ -128,6 +128,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 11.0 ABOUT US PAGE
 12.0 GALLERY PAGE
 13.0 SUPPORT US PAGE
+14.0 CONTACT US PAGE
+15.0 CONTACT FORM 7
  X.0 MEDIA QUERIES
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -482,7 +484,9 @@ footer {
 11.0 ABOUT US PAGE
 --------------------------------------------------------------*/
 
-#about-top-section h3, #about-map-section h3, #about-bottom-section h3 {
+#about-top-section h3,
+#about-map-section h3,
+#about-bottom-section h3 {
   margin-top: 0;
 }
 
@@ -563,6 +567,40 @@ footer {
   img {
     text-align: center;
     width: 100%;
+  }
+}
+
+/*--------------------------------------------------------------
+14.0 CONTACT US PAGE
+--------------------------------------------------------------*/
+#contact {
+  margin: $very-large-spacing 0;
+}
+
+/*--------------------------------------------------------------
+15.0 CONTACT FORM 7
+--------------------------------------------------------------*/
+.wpcf7 label {
+  font-family: 'PT Sans', Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 textarea
+{
+    width: 150%;
+    border: 1px solid $light-grey;
+}
+
+.wpcf7-submit {
+  @include green-button();
+  padding: $reg-spacing $very-large-spacing;
+  border-radius: 0.25em;
+  &:hover {
+    color: $green;
+    background-color: $white;
+    border: 1px solid $green;
   }
 }
 
