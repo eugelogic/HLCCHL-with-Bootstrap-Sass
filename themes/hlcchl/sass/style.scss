@@ -470,9 +470,12 @@ footer {
 10.0 NURSERY PAGE
 --------------------------------------------------------------*/
 
-#blurb {
-  min-height: 30em;
+#nursery {
+  min-height: 25em;
   margin: $very-large-spacing 0;
+  img {
+    width: 100%;
+  }
 }
 
 /*--------------------------------------------------------------
