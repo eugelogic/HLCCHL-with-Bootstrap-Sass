@@ -54,19 +54,17 @@
 
     <!-- MAIN NAV MENU
     ================================================== -->
-    <nav id="hlcchl-main-nav">
-      <div class="container">
-      	<ul>
-          <li><a href="/" class="is-checked">Home</a></li>
-          <li><a href="/whats-on/">What's On</a></li>
-          <li><a href="/news/">News</a></li>
-          <li><a href="/community-centre-hall-hire/">Hall Hire</a></li>
-          <li><a href="/nursery/">Nursery</a></li>
-          <li><a href="/contact-us/">Contact Us</a></li>
-          <li><a href="/support-us/">Support Us</a></li>
-        </ul>
-      </div><!-- container -->
-    </nav>
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<div class="container">
+				<button class="menu-toggle" aria-controls="header-menu" aria-expanded="false"><?php esc_html_e( 'Ξ Menu', 'hlcchl' ); ?></button>
+				<?php
+				wp_nav_menu( array(
+					'theme_location' => 'header-menu',
+					'menu_id' => 'header-menu'
+				) );
+				?>
+			</div><!-- container -->
+		</nav><!-- #site-navigation -->
 
 		<?php if (! is_front_page()) : ?>
 		 <!-- PAGE TITLE BAR

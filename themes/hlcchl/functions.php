@@ -44,7 +44,7 @@ function hlcchl_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'menu-1' => esc_html__( 'Primary', 'hlcchl' ),
+		'header-menu' => esc_html__( 'Header Menu', 'hlcchl' ),
 	) );
 
 	/*
@@ -107,7 +107,7 @@ add_action( 'widgets_init', 'hlcchl_widgets_init' );
 function hlcchl_scripts() {
 	// Default entries of _S
 	wp_enqueue_style( 'hlcchl-style', get_stylesheet_uri(), array('bootstrap_css') );
-	wp_enqueue_script( 'hlcchl-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'hlcchl-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20151215', true );
 	wp_enqueue_script( 'hlcchl-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -124,6 +124,12 @@ function hlcchl_scripts() {
  wp_register_script('respond_js', 'https://oss.maxcdn.com/respond/1.4.2/respond.min.js', '', '', false );
  $wp_scripts->add_data('html5_shiv', 'conditional', 'lt IE 9');
  $wp_scripts->add_data('respond_js', 'conditional', 'lt IE 9');
+
+ // Pass ScreenReaderText string from php to js in order to be translated
+ wp_localize_script('hlcchl-navigation', 'hlcchlScreenReaderText', array(
+  	'expand' => __('Expand child menu', 'hlcchl'),
+		'collapse' => __('Collapse child menu', 'hlcchl'),
+	));
 }
 add_action( 'wp_enqueue_scripts', 'hlcchl_scripts' );
 
