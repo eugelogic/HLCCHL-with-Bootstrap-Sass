@@ -6,7 +6,7 @@
 	}
 	.main-navigation {
 		ul {
-			display: block;
+			// display: block;
 			display: flex;
 			justify-content: space-around;
 			flex-wrap: wrap;
@@ -18,7 +18,6 @@
 				margin-left: 0;
 				li {
 					padding-left: 0;
-					background-color: green;
 					font-size: 85%;
 					a {
 						background: none;
@@ -30,6 +29,19 @@
 					padding: .4em 1em;
 				}
 			}
+		}
+	}
+	.toggled-on ul,
+	.sub-menu.toggled-on {
+		display: flex;
+		// flex-direction: column;
+		// position: relative;
+		li {
+			background-color: red;
+			padding: 2em 0;
+			// position: absolute;
+			// top: 40px;
+			// right: 10px;
 		}
 	}
 }
