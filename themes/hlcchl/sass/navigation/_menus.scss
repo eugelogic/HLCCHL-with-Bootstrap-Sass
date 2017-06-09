@@ -5,24 +5,21 @@
 		display: none;
 	}
 	.main-navigation {
-		.menu-item-has-children > a,
-		.page_item_has_children > a {
-			padding-right: 2em;
-			background: hsla(0, 0%, 100%, .1);
-		}
 		ul {
 			display: block;
 			display: flex;
 			justify-content: space-around;
 			flex-wrap: wrap;
 			margin: 0;
-			padding: 2em 0 4em;
+			padding: 1.5em 0;
 			ul {
+				display: none;
 				flex-direction: column;
-				background: hsla(0, 0%, 100%, .1);
 				margin-left: 0;
 				li {
 					padding-left: 0;
+					background-color: green;
+					font-size: 85%;
 					a {
 						background: none;
 					}
