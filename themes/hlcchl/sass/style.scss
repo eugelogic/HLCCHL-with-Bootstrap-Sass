@@ -568,7 +568,7 @@ footer {
   }
   .btn-right {
     margin-top: 1.6em;
-    @include white-button();
+    @include white-button-alt();
     &:hover {
       color: $white;
       background-color: $green;

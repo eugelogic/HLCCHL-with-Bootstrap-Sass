@@ -33,11 +33,21 @@
 	padding: $reg-spacing $large-spacing;
 }
 
-// White button
+// White button alt
 @mixin white-button() {
 	color: $green;
 	background-color: $white;
 	border: 1px solid $white;
+	text-transform: uppercase;
+	font-family: 'Montserrat', 'Helvetica' , sans-serif;
+	padding: $reg-spacing $large-spacing;
+}
+
+// White button alt
+@mixin white-button-alt() {
+	color: $green;
+	background-color: $white;
+	border: 1px solid $green;
 	text-transform: uppercase;
 	font-family: 'Montserrat', 'Helvetica' , sans-serif;
 	padding: $reg-spacing $large-spacing;
