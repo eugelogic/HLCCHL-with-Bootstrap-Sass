@@ -88,7 +88,6 @@ a:hover, a:active {
   }
 
   .main-navigation ul {
-    display: block;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -102,7 +101,6 @@ a:hover, a:active {
   }
   .main-navigation ul ul li {
     padding-left: 0;
-    background-color: green;
     font-size: 85%;
   }
   .main-navigation ul ul li a {
@@ -110,6 +108,16 @@ a:hover, a:active {
   }
   .main-navigation ul li a {
     padding: .4em 1em;
+  }
+
+  .toggled-on ul,
+  .sub-menu.toggled-on {
+    display: flex;
+  }
+  .toggled-on ul li,
+  .sub-menu.toggled-on li {
+    background-color: red;
+    padding: 2em 0;
   }
 }
 /* ------ smaller screens ? (Morten's) ------ */
