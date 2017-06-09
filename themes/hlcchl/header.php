@@ -31,7 +31,7 @@
 
 	<!-- HEADER
 	================================================== -->
-	<header class="site-header" role="banner">
+	<header id="masthead" class="site-header" role="banner">
 
     <!-- TOP BAR
     ================================================== -->
