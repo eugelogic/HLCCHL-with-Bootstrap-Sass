@@ -37,10 +37,10 @@
     ================================================== -->
     <section id="top-bar">
       <div class="container">
-        Call Us on
-        <a href="tel:02083429524">0208 342 9524</a>
+        <?php the_field('phone_blurb'); ?>
+        <a href="tel:<?php the_field('phone_number_wns'); ?>"><?php the_field('phone_number'); ?></a>
         -
-        Send Us an Email <a href="mailto:hollylodgelondon@hotmail.com">hollylodgelondon@hotmail.com</a>
+        <?php the_field('email_blurb'); ?> <a href="mailto:<?php the_field('email_address'); ?>"><?php the_field('email_address'); ?></a>
       </div><!-- container -->
     </section>
 
