@@ -16,11 +16,9 @@ get_header(); ?>
 
 <section id="default-tml">
   <div class="container">
-    <div class="row">
 
       <!-- CONTENT SECTION
       ================================================== -->
-      <div class="col-sm-offset-1 col-md-11">
 				<?php
 					while ( have_posts() ) : the_post();
 
@@ -28,9 +26,7 @@ get_header(); ?>
 
 					endwhile; // End of the loop.
 				?>
-      </div><!-- col -->
 
-    </div><!-- row -->
   </div><!-- container -->
 </section>
 
