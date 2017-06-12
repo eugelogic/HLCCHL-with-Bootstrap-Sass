@@ -130,6 +130,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 13.0 SUPPORT US PAGE
 14.0 CONTACT US PAGE
 15.0 CONTACT FORM 7
+16.0 DEFAULT TEMPLATE
  X.0 MEDIA QUERIES
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -617,6 +618,15 @@ footer {
     background-color: $white;
     border: 1px solid $green;
   }
+}
+
+/*--------------------------------------------------------------
+16.0 DEFAULT TEMPLATE
+--------------------------------------------------------------*/
+
+#default-tml {
+  min-height: 25em;
+  margin: $very-large-spacing 0;
 }
 
 /*--------------------------------------------------------------
