@@ -558,6 +558,12 @@ a:hover {
   font-size: 1.5em;
   margin-top: 1.5em;
 }
+#site-title h1 a {
+  color: #333333;
+}
+#site-title h1 a:hover {
+  text-decoration: none;
+}
 
 /* MAIN NAV MENU */
 /* See also "new custom style" on _menu.scss file */
