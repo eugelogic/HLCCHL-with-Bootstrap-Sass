@@ -621,7 +621,6 @@ footer {
 
 .wpcf7-submit {
   @include green-button();
-  padding: $reg-spacing $very-large-spacing;
   border-radius: 0.25em;
   &:hover {
     color: $green;
