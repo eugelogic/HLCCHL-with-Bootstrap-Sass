@@ -53,32 +53,37 @@
 			ul {
 				display: none;
 				flex-direction: column;
-				margin-left: 0;
-				padding-left: 0;
-				li {
-					margin-left: 1em;
-					padding-left: 0;
-					font-size: 85%;
-					a {
-						background: none;
-					}
-				}
 			}
 		}
 	}
 	.toggled-on ul,
 	.sub-menu.toggled-on {
-		// display: block;
 		display: flex;
 		flex-direction: column;
-		position: relative;
+		position: absolute;
+		width: 160px;
+		left: 0;
+		margin: 0;
+		margin-top: 24px;
+		padding: 0;
+		z-index: 1;
+		border-top: 2px solid $green;
 		li {
-			background-color: red;
-			position: absolute;
-			top: 24px;
-			right: 10px;
+			margin-left: 0.5em;
+			padding: 0.975em 0;
+			font-size: 85%;
+			background-color: $white;
+			border-bottom: 1px solid $very-light-grey;
+			&:hover {
+				border: none;
+				background-color: $light-green;
+			}
 			a {
-				// padding: inherit;
+				background: none;
+				&:hover {
+					border: none;
+					color: $dark-grey;
+				}
 			}
 		}
 	}

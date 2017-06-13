@@ -24,6 +24,7 @@ $color__text-screen: #21759b;
 $white: #ffffff; // bg & font
 $black: #000000; // bg w opacity
 $green: #189960; // bg & font
+$light-green: lighten( $green, 50% ); // bg
 $very-light-grey: #ededed; // bg
 $light-grey: #bfbfbf; // font
 $mid-grey: #8c8989; // font
