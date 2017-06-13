@@ -152,7 +152,7 @@ $very-dark-grey:  #282A2B; // bg
 --------------------------------------------------------------*/
 
 body {
-  font-family: 'PT Sans', Helvetica, sans-serif;
+  font-family: $font__pt-sans;
   font-weight: 400;
   font-size: 16px;
   color: $dark-grey;
@@ -177,7 +177,7 @@ body {
 --------------------------------------------------------------*/
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', 'Helvetica' , sans-serif;
+  font-family: $font__montserrat;
 }
 
 a {
@@ -554,7 +554,7 @@ footer {
 15.0 CONTACT FORM 7
 --------------------------------------------------------------*/
 .wpcf7 label {
-  font-family: 'PT Sans', Helvetica, sans-serif;
+  font-family: $font__pt-sans;
   font-weight: 400;
 }
 

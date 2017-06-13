@@ -553,7 +553,7 @@ $very-dark-grey:  #282A2B; // bg
 1.0 GENERAL
 --------------------------------------------------------------*/
 body {
-  font-family: 'PT Sans', Helvetica, sans-serif;
+  font-family: "PT Sans", Helvetica, sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #333333;
@@ -577,7 +577,7 @@ body {
 2.0 TYPOGRAPHY
 --------------------------------------------------------------*/
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', 'Helvetica' , sans-serif;
+  font-family: "Montserrat", "Helvetica", sans-serif;
 }
 
 a {
@@ -652,7 +652,7 @@ a:hover {
   background-color: #189960;
   border: 1px solid #189960;
   text-transform: uppercase;
-  font-family: 'Montserrat', 'Helvetica' , sans-serif;
+  font-family: "Montserrat", "Helvetica", sans-serif;
   padding: 1em 2em;
   margin-right: 2em;
 }
@@ -661,7 +661,7 @@ a:hover {
   background-color: #ffffff;
   border: 1px solid #ffffff;
   text-transform: uppercase;
-  font-family: 'Montserrat', 'Helvetica' , sans-serif;
+  font-family: "Montserrat", "Helvetica", sans-serif;
   padding: 1em 2em;
 }
 #hero .btn2 {
@@ -669,7 +669,7 @@ a:hover {
   background-color: #ffffff;
   border: 1px solid #ffffff;
   text-transform: uppercase;
-  font-family: 'Montserrat', 'Helvetica' , sans-serif;
+  font-family: "Montserrat", "Helvetica", sans-serif;
   padding: 1em 2em;
 }
 #hero .btn2:hover {
@@ -677,7 +677,7 @@ a:hover {
   background-color: #189960;
   border: 1px solid #189960;
   text-transform: uppercase;
-  font-family: 'Montserrat', 'Helvetica' , sans-serif;
+  font-family: "Montserrat", "Helvetica", sans-serif;
   padding: 1em 2em;
 }
 
@@ -713,7 +713,7 @@ a:hover {
   background-color: #189960;
   border: 1px solid #189960;
   text-transform: uppercase;
-  font-family: 'Montserrat', 'Helvetica' , sans-serif;
+  font-family: "Montserrat", "Helvetica", sans-serif;
   padding: 1em 2em;
 }
 #hp-widgets .btn:hover {
@@ -721,7 +721,7 @@ a:hover {
   background-color: #ffffff;
   border: 1px solid #189960;
   text-transform: uppercase;
-  font-family: 'Montserrat', 'Helvetica' , sans-serif;
+  font-family: "Montserrat", "Helvetica", sans-serif;
   padding: 1em 2em;
 }
 
@@ -860,7 +860,7 @@ footer a:hover {
   background-color: #ffffff;
   border: 1px solid #ffffff;
   text-transform: uppercase;
-  font-family: 'Montserrat', 'Helvetica' , sans-serif;
+  font-family: "Montserrat", "Helvetica", sans-serif;
   padding: 1em 2em;
   margin-top: 0.75em;
 }
@@ -869,7 +869,7 @@ footer a:hover {
   background-color: #189960;
   border: 1px solid #ffffff;
   text-transform: uppercase;
-  font-family: 'Montserrat', 'Helvetica' , sans-serif;
+  font-family: "Montserrat", "Helvetica", sans-serif;
   padding: 1em 2em;
 }
 
@@ -950,7 +950,7 @@ footer a:hover {
   background-color: #189960;
   border: 1px solid #189960;
   text-transform: uppercase;
-  font-family: 'Montserrat', 'Helvetica' , sans-serif;
+  font-family: "Montserrat", "Helvetica", sans-serif;
   padding: 1em 2em;
 }
 #support-ctas .btn-left:hover {
@@ -958,7 +958,7 @@ footer a:hover {
   background-color: #ffffff;
   border: 1px solid #189960;
   text-transform: uppercase;
-  font-family: 'Montserrat', 'Helvetica' , sans-serif;
+  font-family: "Montserrat", "Helvetica", sans-serif;
   padding: 1em 2em;
 }
 #support-ctas .btn-right {
@@ -967,7 +967,7 @@ footer a:hover {
   background-color: #ffffff;
   border: 1px solid #189960;
   text-transform: uppercase;
-  font-family: 'Montserrat', 'Helvetica' , sans-serif;
+  font-family: "Montserrat", "Helvetica", sans-serif;
   padding: 1em 2em;
 }
 #support-ctas .btn-right:hover {
@@ -975,7 +975,7 @@ footer a:hover {
   background-color: #189960;
   border: 1px solid #189960;
   text-transform: uppercase;
-  font-family: 'Montserrat', 'Helvetica' , sans-serif;
+  font-family: "Montserrat", "Helvetica", sans-serif;
   padding: 1em 2em;
 }
 
@@ -998,7 +998,7 @@ footer a:hover {
 15.0 CONTACT FORM 7
 --------------------------------------------------------------*/
 .wpcf7 label {
-  font-family: 'PT Sans', Helvetica, sans-serif;
+  font-family: "PT Sans", Helvetica, sans-serif;
   font-weight: 400;
 }
 
@@ -1014,7 +1014,7 @@ footer a:hover {
   background-color: #189960;
   border: 1px solid #189960;
   text-transform: uppercase;
-  font-family: 'Montserrat', 'Helvetica' , sans-serif;
+  font-family: "Montserrat", "Helvetica", sans-serif;
   padding: 1em 2em;
   border-radius: 0.25em;
 }
@@ -1023,7 +1023,7 @@ footer a:hover {
   background-color: #ffffff;
   border: 1px solid #189960;
   text-transform: uppercase;
-  font-family: 'Montserrat', 'Helvetica' , sans-serif;
+  font-family: "Montserrat", "Helvetica", sans-serif;
   padding: 1em 2em;
 }
 
