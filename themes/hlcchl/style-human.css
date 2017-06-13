@@ -726,6 +726,9 @@ a:hover {
   color: #189960;
   background-color: #ffffff;
   border: 1px solid #189960;
+  text-transform: uppercase;
+  font-family: 'Montserrat', 'Helvetica' , sans-serif;
+  padding: 1em 2em;
 }
 
 /*--------------------------------------------------------------
@@ -871,6 +874,9 @@ footer a:hover {
   color: #ffffff;
   background-color: #189960;
   border: 1px solid #ffffff;
+  text-transform: uppercase;
+  font-family: 'Montserrat', 'Helvetica' , sans-serif;
+  padding: 1em 2em;
 }
 
 /*--------------------------------------------------------------
@@ -957,6 +963,9 @@ footer a:hover {
   color: #189960;
   background-color: #ffffff;
   border: 1px solid #189960;
+  text-transform: uppercase;
+  font-family: 'Montserrat', 'Helvetica' , sans-serif;
+  padding: 1em 2em;
 }
 #support-ctas .btn-right {
   margin-top: 1.6em;
@@ -971,6 +980,9 @@ footer a:hover {
   color: #ffffff;
   background-color: #189960;
   border: 1px solid #189960;
+  text-transform: uppercase;
+  font-family: 'Montserrat', 'Helvetica' , sans-serif;
+  padding: 1em 2em;
 }
 
 #support-join-us {
@@ -1016,6 +1028,9 @@ footer a:hover {
   color: #189960;
   background-color: #ffffff;
   border: 1px solid #189960;
+  text-transform: uppercase;
+  font-family: 'Montserrat', 'Helvetica' , sans-serif;
+  padding: 1em 2em;
 }
 
 /*--------------------------------------------------------------

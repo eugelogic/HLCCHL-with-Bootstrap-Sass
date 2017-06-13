@@ -297,9 +297,7 @@ a {
   .btn {
     @include green-button();
     &:hover {
-      color: $green;
-      background-color: $white;
-      border: 1px solid $green;
+      @include white-button-alt();
     }
   }
 }
@@ -442,9 +440,7 @@ footer {
     @include white-button();
     margin-top: 0.75em;
     &:hover {
-      color: $white;
-      background-color: $green;
-      border: 1px solid $white;
+      @include green-button-alt();
     }
   }
 }
@@ -527,18 +523,14 @@ footer {
   .btn-left {
     @include green-button();
     &:hover {
-      color: $green;
-      background-color: $white;
-      border: 1px solid $green;
+      @include white-button-alt();
     }
   }
   .btn-right {
     margin-top: 1.6em;
     @include white-button-alt();
     &:hover {
-      color: $white;
-      background-color: $green;
-      border: 1px solid $green;
+      @include green-button();
     }
   }
 }
@@ -578,9 +570,7 @@ footer {
   @include green-button();
   border-radius: 0.25em;
   &:hover {
-    color: $green;
-    background-color: $white;
-    border: 1px solid $green;
+    @include white-button-alt();
   }
 }
 
