@@ -182,7 +182,7 @@ a:hover, a:active {
   }
 }
 /* ------ smaller screens ? (Morten's) ------ */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .main-navigation {
     display: block;
     clear: left;
