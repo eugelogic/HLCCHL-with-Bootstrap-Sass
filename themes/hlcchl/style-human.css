@@ -542,6 +542,7 @@ object {
 16.0 DEFAULT TEMPLATE
 17.0 ARCHIVE TEMPLATE
 18.0 SEARCH TEMPLATE
+18.5 SEARCH FORM
  X.0 MEDIA QUERIES
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -1115,6 +1116,33 @@ footer a:hover {
 #search-tml .read-more::after {
   content: "\21D2";
   margin-left: 0.5em;
+}
+
+/*--------------------------------------------------------------
+18.5 SEARCH FORM
+--------------------------------------------------------------*/
+#searchform .search-field {
+  width: 75%;
+  height: 2em;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ededed;
+  font-weight: 400;
+  padding-left: 0.5em;
+}
+#searchform .search-submit {
+  width: 20%;
+  height: 2em;
+  color: #ffffff;
+  background-color: #189960;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #189960;
+  margin-left: -0.25em;
+}
+#searchform .search-submit:hover {
+  color: #189960;
+  background-color: #ffffff;
 }
 
 /*--------------------------------------------------------------
