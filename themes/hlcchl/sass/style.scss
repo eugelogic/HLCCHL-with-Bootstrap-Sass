@@ -132,6 +132,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 14.0 CONTACT US PAGE
 15.0 CONTACT FORM 7
 16.0 DEFAULT TEMPLATE
+17.0 ARCHIVE TEMPLATE
  X.0 MEDIA QUERIES
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -581,6 +582,43 @@ footer {
 #default-tml {
   min-height: 25em;
   margin: $very-large-spacing 0;
+}
+
+/*--------------------------------------------------------------
+17.0 ARCHIVE TEMPLATE
+--------------------------------------------------------------*/
+#archive-tml {
+  margin: $very-large-spacing 0;
+  .page-header {
+    margin: -17px 0 20px;
+  }
+  .news-wrapper {
+    border: 1px solid $very-light-grey;
+    margin-bottom: 2em;
+  }
+  .wp-post-image {
+    height: 16.875em;
+  }
+  img {
+    width: 100%;
+  }
+  .news-meta {
+    padding: 1.5em;
+  }
+  .news-separator {
+    border-top: 1px solid $very-light-grey;
+    border-bottom: 1px solid $very-light-grey;
+    height: 0.375em;
+    margin: $reg-spacing 0;
+  }
+  .read-more {
+    font-size: 0.85em;
+    text-decoration: none;
+    &::after {
+      content: "\21D2";
+      margin-left: 0.5em;
+    }
+  }
 }
 
 /*--------------------------------------------------------------
