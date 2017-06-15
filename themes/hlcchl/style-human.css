@@ -541,6 +541,7 @@ object {
 15.0 CONTACT FORM 7
 16.0 DEFAULT TEMPLATE
 17.0 ARCHIVE TEMPLATE
+18.0 SEARCH TEMPLATE
  X.0 MEDIA QUERIES
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -1075,6 +1076,43 @@ footer a:hover {
   text-decoration: none;
 }
 #archive-tml .read-more::after {
+  content: "\21D2";
+  margin-left: 0.5em;
+}
+
+/*--------------------------------------------------------------
+18.0 SEARCH TEMPLATE
+--------------------------------------------------------------*/
+#search-tml {
+  margin: 3em 0;
+}
+#search-tml .page-header {
+  margin: -17px 0 20px;
+}
+#search-tml .news-wrapper {
+  border: 1px solid #ededed;
+  margin-bottom: 2em;
+}
+#search-tml .wp-post-image {
+  height: 16.875em;
+}
+#search-tml img {
+  width: 100%;
+}
+#search-tml .news-meta {
+  padding: 1.5em;
+}
+#search-tml .news-separator {
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+  height: 0.375em;
+  margin: 1em 0;
+}
+#search-tml .read-more {
+  font-size: 0.85em;
+  text-decoration: none;
+}
+#search-tml .read-more::after {
   content: "\21D2";
   margin-left: 0.5em;
 }
