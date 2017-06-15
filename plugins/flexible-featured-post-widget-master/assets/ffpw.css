@@ -1,0 +1,18 @@
+.widget_flexible_featured_post article {
+	margin: 0;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+.widget_flexible_featured_post article h3.entry-title {
+	font-size: 1.7rem;
+}
+.widget_flexible_featured_post article .post-excerpt,
+.widget_flexible_featured_post article .post-image,
+.widget_flexible_featured_post article .post-meta  {
+	margin-bottom: 16px;
+}
+.widget_flexible_featured_post article .post-meta {
+	font-size: 90%;
+	font-style: italic;
+}
