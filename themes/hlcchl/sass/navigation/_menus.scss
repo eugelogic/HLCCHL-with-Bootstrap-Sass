@@ -91,96 +91,75 @@
 
 /* ------ smaller screens ? (Morten's) ------ */
 @media screen and (max-width: $query__medium) {
-.main-navigation {
-	display: block;
-	clear: left;
-
-	ul {
-		display: none;
-		list-style: none;
-		margin: 0;
-		padding-top: 1em;
-		padding-left: 0;
-
+	.main-navigation {
 		ul {
-			display: none;
-			top: 1.5em;
-			z-index: 99999;
-
-			ul {
-				top: 0;
-			}
-
-			li {
-				padding-left: 1em;
-
-				&:hover > ul,
-				&.focus > ul {
-					left: 100%;
+		display: none;
+			.current-menu-item {
+				margin: 0;
+				padding: 0;
+				border-top: none;
+				&:hover {
+					padding-top: 0;
+					border: none;
+					background-color: $light-green;
 				}
 			}
-
-			a {
-				width: 200px;
-			}
 		}
-
-		li:hover > ul,
-		li.focus > ul {
-			left: auto;
+		/* Sandwich menu icon */
+		.menu-toggle {
+			margin: 0 auto;
+			display: block;
+			padding: 1em;
+			font-size: 80%;
+			text-transform: uppercase;
+			color: $dark-grey;
+			background-color: transparent;
+			border: none;
 		}
 	}
-
-	li {
-		position: relative;
-	}
-
-	a {
-		display: inline-block;
-		width: 100%;
-		padding: .5em 1em .5em 0;
-		text-decoration: none;
-		color: #fff;
-	}
-
-	a:hover,
-	a:focus {
-		text-decoration: underline;
-	}
-
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a,
-	.current-menu-ancestor > a {
-	}
-
-	.menu-item-has-children,
-	.page-item-has-children {
-		min-width: 218px;
-	}
-	.menu-item-has-children > a,
-	.page_item_has_children > a {
-		padding-right: 2em;
-	}
-}
-
-/* sorted */
-.menu-toggle {
-	margin: 0 auto;
-	display: block;
-	padding: 1em;
-	font-size: 80%;
-	text-transform: uppercase;
-	color: $dark-grey;
-	background-color: transparent;
-	border: none;
-}
 
 /* Toggle small menu and sub-menus on */
-.toggled-on ul,
-.sub-menu.toggled-on {
-	display: block;
-}
+	.toggled-on ul,
+	.sub-menu.toggled-on {
+		display: block;
+		width: 100%;
+		background-color: $very-light-grey;
+		margin: 0;
+		border-top: none;
+		li {
+			margin: 0;
+			padding: 0;
+			border: none;
+			background-color: $very-light-grey;
+
+			a {
+				display: inline-block;
+				width: 100%;
+				padding: 0.75em 0 1em 0.75em;
+				text-decoration: none;
+				color: $dark-grey;
+				border-bottom: 1px solid $light-grey;
+				&:hover {
+					padding: 0.75em 0 1em 0.75em;
+					border: none;
+					background-color: $light-green;
+					border-bottom: 1px solid $light-grey;
+				}
+			}
+		}
+		li:nth-child(6) {
+			position: relative;
+			.dropdown-toggle {
+				position: absolute;
+				top: 0;
+				left: 100px;
+			}
+		}
+		ul {
+			top: 77px;
+			z-index: 99999;
+		}
+	}
 }
 
 /* ------ Legacy style ------ */
