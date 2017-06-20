@@ -537,6 +537,7 @@ object {
 17.0 ARCHIVE TEMPLATE
 18.0 SEARCH TEMPLATE
 18.5 SEARCH FORM
+19.0 WIDGETS
  X.0 MEDIA QUERIES
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -1137,6 +1138,37 @@ footer a:hover {
 #searchform .search-submit:hover {
   color: #189960;
   background-color: #ffffff;
+}
+
+/*--------------------------------------------------------------
+19.0 WIDGETS
+--------------------------------------------------------------*/
+.widget_recent_entries {
+  border: 1px solid #ededed;
+}
+.widget_recent_entries .widget-title {
+  text-align: center;
+  border-top: 3px solid #189960;
+  margin-top: 0;
+  padding-top: 2em;
+  padding-bottom: 0.625em;
+}
+.widget_recent_entries ul {
+  list-style-type: none;
+  padding: 1em;
+}
+.widget_recent_entries ul li {
+  padding-bottom: 1em;
+}
+.widget_recent_entries ul li img {
+  height: 4em !important;
+  width: 4em !important;
+}
+.widget_recent_entries ul li a:nth-child(2) {
+  padding-left: 1em;
+}
+.widget_recent_entries ul li > * {
+  display: inline;
 }
 
 /*--------------------------------------------------------------

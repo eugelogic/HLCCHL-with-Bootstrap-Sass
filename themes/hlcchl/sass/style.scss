@@ -135,6 +135,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 17.0 ARCHIVE TEMPLATE
 18.0 SEARCH TEMPLATE
 18.5 SEARCH FORM
+19.0 WIDGETS
  X.0 MEDIA QUERIES
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -685,6 +686,44 @@ footer {
     &:hover {
       color: $green;
       background-color: $white;
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+19.0 WIDGETS
+--------------------------------------------------------------*/
+.widget_recent_entries {
+  border: 1px solid $very-light-grey;
+  .post-meta-widget {
+    // ???
+  }
+  .widget-title {
+    text-align: center;
+    border-top: 3px solid $green;
+    margin-top: 0;
+    padding-top: 2em;
+    padding-bottom: 0.625em;
+  }
+  ul {
+    list-style-type: none;
+    padding: 1em;
+    li {
+      padding-bottom: 1em;
+      img {
+        height: 4em !important;
+        width: 4em !important;
+      }
+      a:nth-child(2) {
+        // display: block;
+        padding-left: 1em;
+      }
+      .post-date {
+        // display: block;
+      }
+    }
+    li > * {
+      display: inline;
     }
   }
 }
