@@ -538,6 +538,7 @@ object {
 18.0 SEARCH TEMPLATE
 18.5 SEARCH FORM
 19.0 WIDGETS
+20.0 CALENDAR
  X.0 MEDIA QUERIES
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -1036,7 +1037,7 @@ footer a:hover {
 --------------------------------------------------------------*/
 #default-tml {
   min-height: 25em;
-  margin: 3em 0;
+  margin: 0 0 3em;
 }
 
 /*--------------------------------------------------------------
@@ -1169,6 +1170,78 @@ footer a:hover {
 }
 .widget_recent_entries ul li > * {
   display: inline;
+}
+
+/*--------------------------------------------------------------
+20.0 CALENDAR
+--------------------------------------------------------------*/
+.tribe-events-calendar th {
+  background-color: #189960;
+  color: #ffffff;
+  height: 4em;
+}
+
+#tribe-events-content .tribe-events-calendar td {
+  background-color: #d0d0d0;
+}
+
+.tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"],
+.tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"] > a {
+  background-color: #189960;
+  color: #ffffff;
+}
+
+#tribe-events-content .tribe-events-calendar div[id*="tribe-events-event-"] h3.tribe-events-month-event-title {
+  font-weight: 700;
+}
+
+/* --- Tooltip --- */
+.recurring-info-tooltip,
+.tribe-events-calendar .tribe-events-tooltip,
+.tribe-events-shortcode.view-week .tribe-events-tooltip,
+.tribe-events-week .tribe-events-tooltip {
+  border: none;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+#tribe-events-content .tribe-events-tooltip h4 {
+  background-color: #189960;
+  color: #ffffff;
+  font-size: 1.5em;
+  padding: 1em;
+}
+
+.tribe-events-tooltip .tribe-events-event-body {
+  padding: 1em;
+}
+
+/* --- Export button --- */
+#tribe-events .tribe-events-button, .tribe-events-button {
+  color: #ffffff;
+  background-color: #189960;
+  border: 1px solid #189960;
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica", sans-serif;
+  padding: 1em 2em;
+}
+#tribe-events .tribe-events-button:hover, .tribe-events-button:hover {
+  color: #189960;
+  background-color: #ffffff;
+  border: 1px solid #189960;
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica", sans-serif;
+  padding: 1em 2em;
+}
+
+/* --- Calendar notices --- */
+.tribe-events-notices {
+  background: #bcf4db none repeat scroll 0 0;
+  border: 1px solid #189960;
+  border-radius: 4px;
+  color: #189960;
+  margin: 0.75em 0 1em;
+  padding: 0.5em 2em 0.5em 1em;
 }
 
 /*--------------------------------------------------------------

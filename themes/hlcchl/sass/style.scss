@@ -136,6 +136,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 18.0 SEARCH TEMPLATE
 18.5 SEARCH FORM
 19.0 WIDGETS
+20.0 CALENDAR
  X.0 MEDIA QUERIES
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -584,7 +585,7 @@ footer {
 
 #default-tml {
   min-height: 25em;
-  margin: $very-large-spacing 0;
+  margin: 0 0 $very-large-spacing;
 }
 
 /*--------------------------------------------------------------
@@ -726,6 +727,68 @@ footer {
       display: inline;
     }
   }
+}
+
+/*--------------------------------------------------------------
+20.0 CALENDAR
+--------------------------------------------------------------*/
+.tribe-events-calendar th {
+  background-color: $green;
+  color: $white;
+  height: 4em;
+}
+
+#tribe-events-content .tribe-events-calendar td {
+    background-color: $calendar-bg;
+}
+
+.tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"],
+.tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"] > a {
+  background-color: $green;
+  color: $white;
+}
+
+#tribe-events-content .tribe-events-calendar div[id*="tribe-events-event-"] h3.tribe-events-month-event-title {
+  font-weight: 700;
+}
+
+/* --- Tooltip --- */
+.recurring-info-tooltip,
+.tribe-events-calendar .tribe-events-tooltip,
+.tribe-events-shortcode.view-week .tribe-events-tooltip,
+.tribe-events-week .tribe-events-tooltip {
+  border: none;
+  background-color: $white;
+  color: $dark-grey;
+}
+
+#tribe-events-content .tribe-events-tooltip h4 {
+  background-color: $green;
+  color: $white;
+  font-size: 1.5em;
+  padding: 1em;
+}
+
+.tribe-events-tooltip .tribe-events-event-body {
+  padding: 1em;
+}
+
+/* --- Export button --- */
+#tribe-events .tribe-events-button, .tribe-events-button {
+  @include green-button();
+  &:hover {
+    @include white-button-alt();
+  }
+}
+
+/* --- Calendar notices --- */
+.tribe-events-notices {
+  background: $light-green none repeat scroll 0 0;
+  border: 1px solid $green;
+  border-radius: 4px;
+  color: $green;
+  margin: 0.75em 0 1em;
+  padding: 0.5em 2em 0.5em 1em;
 }
 
 /*--------------------------------------------------------------
