@@ -37,7 +37,7 @@
  			$args['widget_id'] = $this->id;
  		}
 
- 		$title = ( ! empty( $instance['title'] ) ) ? $instance['title'] : __( 'HLCCHL Recent Posts' );
+ 		$title = ( ! empty( $instance['title'] ) ) ? $instance['title'] : __( 'Recent Posts' );
 
  		/** This filter is documented in wp-includes/widgets/class-wp-widget-pages.php */
  		$title = apply_filters( 'widget_title', $title, $instance, $this->id_base );
@@ -80,9 +80,11 @@
 					</a>
 				<?php endif; ?>
 
- 				<a href="<?php the_permalink(); ?>"><?php get_the_title() ? the_title() : the_ID(); ?></a>
- 			<?php if ( $show_date ) : ?>
- 				<span class="post-date"><?php echo get_the_date(); ?></span>
+				<div class="post-meta-widget">
+	 				<a href="<?php the_permalink(); ?>"><?php get_the_title() ? the_title() : the_ID(); ?></a>
+	 			<?php if ( $show_date ) : ?>
+	 				<span class="post-date"><?php echo get_the_date(); ?></span>
+				</div>
  			<?php endif; ?>
  			</li>
  		<?php endwhile; ?>
