@@ -184,62 +184,22 @@ a:hover, a:active {
 /* ------ smaller screens ? (Morten's) ------ */
 @media screen and (max-width: 900px) {
   .main-navigation {
-    display: block;
-    clear: left;
+    /* Sandwich menu icon */
   }
   .main-navigation ul {
     display: none;
-    list-style: none;
+  }
+  .main-navigation ul .current-menu-item {
     margin: 0;
-    padding-top: 1em;
-    padding-left: 0;
+    padding: 0;
+    border-top: none;
   }
-  .main-navigation ul ul {
-    display: none;
-    top: 1.5em;
-    z-index: 99999;
+  .main-navigation ul .current-menu-item:hover {
+    padding-top: 0;
+    border: none;
+    background-color: #bcf4db;
   }
-  .main-navigation ul ul ul {
-    top: 0;
-  }
-  .main-navigation ul ul li {
-    padding-left: 1em;
-  }
-  .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
-    left: 100%;
-  }
-  .main-navigation ul ul a {
-    width: 200px;
-  }
-  .main-navigation ul li:hover > ul,
-  .main-navigation ul li.focus > ul {
-    left: auto;
-  }
-  .main-navigation li {
-    position: relative;
-  }
-  .main-navigation a {
-    display: inline-block;
-    width: 100%;
-    padding: .5em 1em .5em 0;
-    text-decoration: none;
-    color: #fff;
-  }
-  .main-navigation a:hover,
-  .main-navigation a:focus {
-    text-decoration: underline;
-  }
-  .main-navigation .menu-item-has-children,
-  .main-navigation .page-item-has-children {
-    min-width: 218px;
-  }
-  .main-navigation .menu-item-has-children > a,
-  .main-navigation .page_item_has_children > a {
-    padding-right: 2em;
-  }
-
-  /* sorted */
-  .menu-toggle {
+  .main-navigation .menu-toggle {
     margin: 0 auto;
     display: block;
     padding: 1em;
@@ -254,6 +214,48 @@ a:hover, a:active {
   .toggled-on ul,
   .sub-menu.toggled-on {
     display: block;
+    width: 100%;
+    background-color: #ededed;
+    margin: 0;
+    border-top: none;
+  }
+  .toggled-on ul li,
+  .sub-menu.toggled-on li {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: #ededed;
+  }
+  .toggled-on ul li a,
+  .sub-menu.toggled-on li a {
+    display: inline-block;
+    width: 100%;
+    padding: 0.75em 0 1em 0.75em;
+    text-decoration: none;
+    color: #333333;
+    border-bottom: 1px solid #bfbfbf;
+  }
+  .toggled-on ul li a:hover,
+  .sub-menu.toggled-on li a:hover {
+    padding: 0.75em 0 1em 0.75em;
+    border: none;
+    background-color: #bcf4db;
+    border-bottom: 1px solid #bfbfbf;
+  }
+  .toggled-on ul li:nth-child(6),
+  .sub-menu.toggled-on li:nth-child(6) {
+    position: relative;
+  }
+  .toggled-on ul li:nth-child(6) .dropdown-toggle,
+  .sub-menu.toggled-on li:nth-child(6) .dropdown-toggle {
+    position: absolute;
+    top: 0;
+    left: 100px;
+  }
+  .toggled-on ul ul,
+  .sub-menu.toggled-on ul {
+    top: 77px;
+    z-index: 99999;
   }
 }
 /* ------ Legacy style ------ */
