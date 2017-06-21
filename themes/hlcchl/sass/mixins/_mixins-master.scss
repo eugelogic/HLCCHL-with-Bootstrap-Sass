@@ -62,3 +62,21 @@
 	font-family: $font__montserrat;
 	padding: $reg-spacing $large-spacing;
 }
+
+// Post related mixins
+// 1 of 3
+@mixin post-wrapper() {
+	border: 1px solid $very-light-grey;
+	margin-bottom: 2em;
+}
+// 2 0f 3
+@mixin post-meta() {
+	padding: 1.5em;
+}
+// 3 of 3
+@mixin post-separator() {
+	border-top: 1px solid $very-light-grey;
+	border-bottom: 1px solid $very-light-grey;
+	height: 0.375em;
+	margin: $reg-spacing 0;
+}

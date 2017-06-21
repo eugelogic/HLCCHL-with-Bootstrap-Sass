@@ -352,8 +352,7 @@ footer {
 #news-index-grid {
   margin: $very-large-spacing 0;
   .post-wrapper {
-    border: 1px solid $very-light-grey;
-    margin-bottom: 2em;
+    @include post-wrapper();
   }
   .wp-post-image {
     height: 16.875em;
@@ -362,13 +361,10 @@ footer {
     width: 100%;
   }
   .post-meta {
-    padding: 1.5em;
+    @include post-meta();
   }
   .post-separator {
-    border-top: 1px solid $very-light-grey;
-    border-bottom: 1px solid $very-light-grey;
-    height: 0.375em;
-    margin: $reg-spacing 0;
+    @include post-separator();
   }
   .read-more {
     font-size: 0.85em;
@@ -597,8 +593,7 @@ footer {
     margin: -17px 0 20px;
   }
   .post-wrapper {
-    border: 1px solid $very-light-grey;
-    margin-bottom: 2em;
+    @include post-wrapper();
   }
   .wp-post-image {
     height: 16.875em;
@@ -607,13 +602,10 @@ footer {
     width: 100%;
   }
   .post-meta {
-    padding: 1.5em;
+    @include post-meta();
   }
   .post-separator {
-    border-top: 1px solid $very-light-grey;
-    border-bottom: 1px solid $very-light-grey;
-    height: 0.375em;
-    margin: $reg-spacing 0;
+    @include post-separator();
   }
   .read-more {
     font-size: 0.85em;
@@ -634,8 +626,7 @@ footer {
     margin: -17px 0 20px;
   }
   .post-wrapper {
-    border: 1px solid $very-light-grey;
-    margin-bottom: 2em;
+    @include post-wrapper();
   }
   .wp-post-image {
     height: 16.875em;
@@ -644,13 +635,10 @@ footer {
     width: 100%;
   }
   .post-meta {
-    padding: 1.5em;
+    @include post-meta();
   }
   .post-separator {
-    border-top: 1px solid $very-light-grey;
-    border-bottom: 1px solid $very-light-grey;
-    height: 0.375em;
-    margin: $reg-spacing 0;
+    @include post-separator();
   }
   .read-more {
     font-size: 0.85em;
