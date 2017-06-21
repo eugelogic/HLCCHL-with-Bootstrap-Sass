@@ -30,7 +30,7 @@ get_header(); ?>
 		 <!-- SEARCH RESULTS GRID
 		 ================================================== -->
 		 <div class="col-md-6">
-				<div class="news-wrapper">
+				<div class="post-wrapper">
 
 				 <?php if ( has_post_thumbnail() ) : ?>
 						 <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
@@ -38,14 +38,14 @@ get_header(); ?>
 						 </a>
 				 <?php endif; ?>
 
-				 <div class="news-meta">
+				 <div class="post-meta">
 					 <?php the_title( '<h4><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h4>' ); ?>
 					 <p class="small"><?php the_date(); ?> | Categories: <?php the_category( ', ' ); ?></p>
-					 <div class="news-separator"></div>
+					 <div class="post-separator"></div>
 					 <?php the_excerpt(); ?>
 					 <a href="<?php the_permalink(); ?>" class="read-more">Read More</a>
-				 </div><!-- news-meta -->
-			 </div><!-- news-wrapper -->
+				 </div><!-- post-meta -->
+			 </div><!-- post-wrapper -->
 		 </div><!-- col -->
 
 				<?php endwhile;
