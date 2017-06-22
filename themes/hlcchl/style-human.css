@@ -182,7 +182,7 @@ a:hover, a:active {
   }
 }
 /* ------ smaller screens ? (Morten's) ------ */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
   .main-navigation {
     /* Sandwich menu icon */
   }
@@ -886,7 +886,7 @@ footer a:hover {
 }
 
 /* Smaller screens */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 990px) {
   #bottom-cta h3,
   #bottom-cta .btn-case {
     text-align: center;
