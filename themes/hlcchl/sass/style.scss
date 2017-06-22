@@ -445,6 +445,13 @@ footer {
     }
   }
 }
+/* Smaller screens */
+@media screen and (max-width: $query__medium) {
+  #bottom-cta h3,
+  #bottom-cta .btn-case {
+    text-align: center;
+  }
+}
 
 /*--------------------------------------------------------------
 10.0 NURSERY PAGE
@@ -782,3 +789,4 @@ footer {
 /*--------------------------------------------------------------
 X.0 MEDIA QUERIES
 --------------------------------------------------------------*/
+/* see individual sections */
