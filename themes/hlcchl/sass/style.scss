@@ -446,7 +446,7 @@ footer {
   }
 }
 /* Smaller screens */
-@media screen and (max-width: $query__medium) {
+@media screen and (max-width: $query__large) {
   #bottom-cta h3,
   #bottom-cta .btn-case {
     text-align: center;

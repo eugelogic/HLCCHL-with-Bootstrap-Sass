@@ -1,6 +1,6 @@
 /* ------ New custom style from Morten's ------ */
 /* ------ large screens ------ */
-@media screen and (min-width: $query__small) {
+@media screen and (min-width: $query__medium) {
 	.menu-toggle {
 		display: none;
 	}
@@ -90,7 +90,7 @@
 }
 
 /* ------ smaller screens ? (Morten's) ------ */
-@media screen and (max-width: $query__medium) {
+@media screen and (max-width: $query__medium-large) {
 	.main-navigation {
 		ul {
 		display: none;
