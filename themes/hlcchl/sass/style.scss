@@ -177,6 +177,14 @@ body {
   }
 }
 
+/* under medium-large screens */
+@media screen and (max-width: $query__medium-large)  {
+  .container {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+}
+
 /*--------------------------------------------------------------
 2.0 TYPOGRAPHY
 --------------------------------------------------------------*/
