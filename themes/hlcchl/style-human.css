@@ -885,6 +885,13 @@ footer a:hover {
   padding: 1em 2em;
 }
 
+/* Smaller screens */
+@media screen and (max-width: 900px) {
+  #bottom-cta h3,
+  #bottom-cta .btn-case {
+    text-align: center;
+  }
+}
 /*--------------------------------------------------------------
 10.0 NURSERY PAGE
 --------------------------------------------------------------*/
@@ -1254,3 +1261,4 @@ footer a:hover {
 /*--------------------------------------------------------------
 X.0 MEDIA QUERIES
 --------------------------------------------------------------*/
+/* see individual sections */
