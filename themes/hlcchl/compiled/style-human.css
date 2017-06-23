@@ -1101,6 +1101,26 @@ footer a:hover {
   padding: 1em 2em;
 }
 
+/* under large screens */
+@media screen and (max-width: 990px) {
+  .col-md-5 {
+    margin-left: 8.33333333%;
+  }
+}
+/* under medium screens */
+@media screen and (max-width: 600px) {
+  .wpcf7 input[type="text"],
+  .wpcf7 input[type="email"],
+  .wpcf7 textarea {
+    width: 100%;
+  }
+}
+/* under small screens */
+@media screen and (max-width: 360px) {
+  .col-md-5 {
+    margin-left: 0;
+  }
+}
 /*--------------------------------------------------------------
 16.0 DEFAULT TEMPLATE
 --------------------------------------------------------------*/
