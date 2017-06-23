@@ -11,7 +11,11 @@ get_header(); ?>
 
 <!-- HERO BANNER WITH CTA
 ================================================== -->
-<div class="jumbotron" id="hero" style="background: url('<?php the_field('img_background'); ?>') no-repeat scroll center;">
+<?php if (get_field('img_background')) { ?>
+  <div class="jumbotron" id="hero" style="background: url('<?php the_field('img_background'); ?>') no-repeat scroll center;">
+<?php } else { ?>
+  <div class="jumbotron" id="hero" style="background-color: #8BCCAF;">
+<?php } ?>
   <div class="container">
     <h2><?php the_field('hero_title'); ?></h2>
     <h3><?php the_field('hero_copy'); ?></h3>
