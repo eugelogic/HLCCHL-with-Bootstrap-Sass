@@ -28,6 +28,7 @@
 	color: $white;
 	background-color: $green;
 	border: 1px solid $green;
+	border-radius: 0.25em;
 	text-transform: uppercase;
 	font-family: $font__montserrat;
 	padding: $reg-spacing $large-spacing;
@@ -38,9 +39,21 @@
 	color: $white;
 	background-color: $green;
 	border: 1px solid $white;
+	border-radius: 0.25em;
 	text-transform: uppercase;
 	font-family: $font__montserrat;
 	padding: $reg-spacing $large-spacing;
+}
+
+// Green button main nav menu
+@mixin green-button-nav() {
+	color: $white;
+	background-color: $green;
+	border: 1px solid $green;
+	border-radius: 0.25em;
+	text-transform: uppercase;
+	font-family: $font__montserrat;
+	padding: $reg-spacing;
 }
 
 // White button
@@ -48,6 +61,7 @@
 	color: $green;
 	background-color: $white;
 	border: 1px solid $white;
+	border-radius: 0.25em;
 	text-transform: uppercase;
 	font-family: $font__montserrat;
 	padding: $reg-spacing $large-spacing;
@@ -58,9 +72,21 @@
 	color: $green;
 	background-color: $white;
 	border: 1px solid $green;
+	border-radius: 0.25em;
 	text-transform: uppercase;
 	font-family: $font__montserrat;
 	padding: $reg-spacing $large-spacing;
+}
+
+// White button main nav menu
+@mixin white-button-nav() {
+	color: $green;
+	background-color: $white;
+	border: 1px solid $green;
+	border-radius: 0.25em;
+	text-transform: uppercase;
+	font-family: $font__montserrat;
+	padding: $reg-spacing;
 }
 
 // Post related mixins
