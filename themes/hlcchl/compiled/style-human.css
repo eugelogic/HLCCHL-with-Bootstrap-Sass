@@ -96,7 +96,7 @@ a:hover, a:active {
     border-top: 1px solid #189960;
   }
   .main-navigation .container {
-    width: 60%;
+    width: 70%;
   }
   .main-navigation ul {
     display: flex;
@@ -112,7 +112,7 @@ a:hover, a:active {
   }
   .main-navigation ul li a {
     color: #333333;
-    padding: .4em 1em;
+    padding: .4em .8em;
   }
   .main-navigation ul li a:hover {
     text-decoration: none;
@@ -127,6 +127,24 @@ a:hover, a:active {
     position: absolute;
     top: 23px;
     left: 115px;
+  }
+  .main-navigation ul li:nth-child(7) a {
+    color: #ffffff;
+    background-color: #189960;
+    border: 1px solid #189960;
+    border-radius: 0.25em;
+    text-transform: uppercase;
+    font-family: "Montserrat", "Helvetica", sans-serif;
+    padding: 1em;
+  }
+  .main-navigation ul li:nth-child(7) a:hover {
+    color: #189960;
+    background-color: #ffffff;
+    border: 1px solid #189960;
+    border-radius: 0.25em;
+    text-transform: uppercase;
+    font-family: "Montserrat", "Helvetica", sans-serif;
+    padding: 1em;
   }
   .main-navigation ul .current-menu-item {
     color: #189960;
@@ -245,6 +263,28 @@ a:hover, a:active {
     position: absolute;
     top: 0;
     left: 100px;
+  }
+  .toggled-on ul li:nth-child(7) a,
+  .sub-menu.toggled-on li:nth-child(7) a {
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background-color: #189960;
+    display: inline-block;
+    width: 100%;
+    padding: 0.75em 0 1em 0.75em;
+    text-decoration: none;
+    color: #ffffff;
+    border-bottom: 1px solid #bfbfbf;
+  }
+  .toggled-on ul li:nth-child(7) a:hover,
+  .sub-menu.toggled-on li:nth-child(7) a:hover {
+    padding: 0.75em 0 1em 0.75em;
+    border: none;
+    color: #333333;
+    background-color: #bcf4db;
+    border-bottom: 1px solid #bfbfbf;
   }
   .toggled-on ul ul,
   .sub-menu.toggled-on ul {
@@ -664,6 +704,7 @@ a:hover {
   color: #ffffff;
   background-color: #189960;
   border: 1px solid #189960;
+  border-radius: 0.25em;
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica", sans-serif;
   padding: 1em 2em;
@@ -673,6 +714,7 @@ a:hover {
   color: #189960;
   background-color: #ffffff;
   border: 1px solid #ffffff;
+  border-radius: 0.25em;
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica", sans-serif;
   padding: 1em 2em;
@@ -681,6 +723,7 @@ a:hover {
   color: #189960;
   background-color: #ffffff;
   border: 1px solid #ffffff;
+  border-radius: 0.25em;
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica", sans-serif;
   padding: 1em 2em;
@@ -689,6 +732,7 @@ a:hover {
   color: #ffffff;
   background-color: #189960;
   border: 1px solid #189960;
+  border-radius: 0.25em;
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica", sans-serif;
   padding: 1em 2em;
@@ -725,6 +769,7 @@ a:hover {
   color: #ffffff;
   background-color: #189960;
   border: 1px solid #189960;
+  border-radius: 0.25em;
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica", sans-serif;
   padding: 1em 2em;
@@ -733,6 +778,7 @@ a:hover {
   color: #189960;
   background-color: #ffffff;
   border: 1px solid #189960;
+  border-radius: 0.25em;
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica", sans-serif;
   padding: 1em 2em;
@@ -872,6 +918,7 @@ footer a:hover {
   color: #189960;
   background-color: #ffffff;
   border: 1px solid #ffffff;
+  border-radius: 0.25em;
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica", sans-serif;
   padding: 1em 2em;
@@ -881,6 +928,7 @@ footer a:hover {
   color: #ffffff;
   background-color: #189960;
   border: 1px solid #ffffff;
+  border-radius: 0.25em;
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica", sans-serif;
   padding: 1em 2em;
@@ -969,6 +1017,7 @@ footer a:hover {
   color: #ffffff;
   background-color: #189960;
   border: 1px solid #189960;
+  border-radius: 0.25em;
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica", sans-serif;
   padding: 1em 2em;
@@ -977,6 +1026,7 @@ footer a:hover {
   color: #189960;
   background-color: #ffffff;
   border: 1px solid #189960;
+  border-radius: 0.25em;
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica", sans-serif;
   padding: 1em 2em;
@@ -986,6 +1036,7 @@ footer a:hover {
   color: #189960;
   background-color: #ffffff;
   border: 1px solid #189960;
+  border-radius: 0.25em;
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica", sans-serif;
   padding: 1em 2em;
@@ -994,6 +1045,7 @@ footer a:hover {
   color: #ffffff;
   background-color: #189960;
   border: 1px solid #189960;
+  border-radius: 0.25em;
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica", sans-serif;
   padding: 1em 2em;
@@ -1033,6 +1085,7 @@ footer a:hover {
   color: #ffffff;
   background-color: #189960;
   border: 1px solid #189960;
+  border-radius: 0.25em;
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica", sans-serif;
   padding: 1em 2em;
@@ -1042,6 +1095,7 @@ footer a:hover {
   color: #189960;
   background-color: #ffffff;
   border: 1px solid #189960;
+  border-radius: 0.25em;
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica", sans-serif;
   padding: 1em 2em;
@@ -1246,6 +1300,7 @@ footer a:hover {
   color: #ffffff;
   background-color: #189960;
   border: 1px solid #189960;
+  border-radius: 0.25em;
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica", sans-serif;
   padding: 1em 2em;
@@ -1254,6 +1309,7 @@ footer a:hover {
   color: #189960;
   background-color: #ffffff;
   border: 1px solid #189960;
+  border-radius: 0.25em;
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica", sans-serif;
   padding: 1em 2em;

@@ -13,7 +13,7 @@
 	.main-navigation {
 		border-top: 1px solid $green;
 		.container {
-	    width: 60%;
+	    width: 70%;
 	  }
 		ul {
 			display: flex;
@@ -27,7 +27,7 @@
 				padding: 1.5em 0;
 				a {
 					color: $dark-grey;
-					padding: .4em 1em;
+					padding: .4em .8em;
 					&:hover {
 		        text-decoration: none;
 		        color: $green;
@@ -43,6 +43,12 @@
 		      top: 23px;
 		      left: 115px;
 		    }
+		  }
+			li:nth-child(7) a {
+		    @include green-button-nav();
+				&:hover {
+			    @include white-button-nav();
+			  }
 		  }
 			.current-menu-item {
 				color: $green;
@@ -131,7 +137,6 @@
 			padding: 0;
 			border: none;
 			background-color: $very-light-grey;
-
 			a {
 				display: inline-block;
 				width: 100%;
@@ -153,6 +158,28 @@
 				position: absolute;
 				top: 0;
 				left: 100px;
+			}
+		}
+		li:nth-child(7) {
+			a {
+				margin: 0;
+				padding: 0;
+				border: none;
+				border-radius: 0;
+				background-color: $green;
+				display: inline-block;
+				width: 100%;
+				padding: 0.75em 0 1em 0.75em;
+				text-decoration: none;
+				color: $white;
+				border-bottom: 1px solid $light-grey;
+				&:hover {
+					padding: 0.75em 0 1em 0.75em;
+					border: none;
+					color: $dark-grey;
+					background-color: $light-green;
+					border-bottom: 1px solid $light-grey;
+				}
 			}
 		}
 		ul {
