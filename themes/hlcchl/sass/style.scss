@@ -590,6 +590,30 @@ footer {
   }
 }
 
+/* under large screens */
+@media screen and (max-width: $query__large)  {
+  .col-md-5 {
+    margin-left: 8.33333333%;
+  }
+}
+
+/* under medium screens */
+@media screen and (max-width: $query__medium)  {
+  .wpcf7 input[type="text"],
+  .wpcf7 input[type="email"],
+  .wpcf7 textarea
+  {
+    width: 100%;
+  }
+}
+
+/* under small screens */
+@media screen and (max-width: $query__small)  {
+  .col-md-5 {
+    margin-left: 0;
+  }
+}
+
 /*--------------------------------------------------------------
 16.0 DEFAULT TEMPLATE
 --------------------------------------------------------------*/
