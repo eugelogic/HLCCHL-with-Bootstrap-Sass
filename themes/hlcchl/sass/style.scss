@@ -697,6 +697,10 @@ footer {
 /*--------------------------------------------------------------
 19.0 WIDGETS
 --------------------------------------------------------------*/
+.widget {
+  margin: 0 1em 1.5em;
+}
+
 .widget_recent_entries {
   border: 1px solid $very-light-grey;
   .post-meta-widget {
@@ -719,16 +723,19 @@ footer {
         width: 4em !important;
       }
       a:nth-child(2) {
-        // display: block;
         padding-left: 1em;
-      }
-      .post-date {
-        // display: block;
       }
     }
     li > * {
       display: inline;
     }
+  }
+}
+
+/* under large screens */
+@media screen and (max-width: $query__large)  {
+  aside.col-sm-4 {
+    width: 100%;
   }
 }
 

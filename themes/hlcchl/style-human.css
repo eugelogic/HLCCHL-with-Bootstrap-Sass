@@ -1165,6 +1165,10 @@ footer a:hover {
 /*--------------------------------------------------------------
 19.0 WIDGETS
 --------------------------------------------------------------*/
+.widget {
+  margin: 0 1em 1.5em;
+}
+
 .widget_recent_entries {
   border: 1px solid #ededed;
 }
@@ -1193,6 +1197,12 @@ footer a:hover {
   display: inline;
 }
 
+/* under large screens */
+@media screen and (max-width: 990px) {
+  aside.col-sm-4 {
+    width: 100%;
+  }
+}
 /*--------------------------------------------------------------
 20.0 CALENDAR
 --------------------------------------------------------------*/
