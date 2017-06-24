@@ -53,6 +53,7 @@ get_header(); ?>
  <div class="container">
    <div class="row">
 
+     <?php if (get_field('join_us_img')) { ?>
      <!-- Join Us Blurb
      ================================================== -->
      <div class="col-md-6">
@@ -67,6 +68,14 @@ get_header(); ?>
        ?>
        <img src="<?php echo $join_us_image['url']; ?>" alt="<?php echo $join_us_image['alt']; ?>">
      </div><!-- col -->
+
+     <?php } else { ?>
+     <!-- Join Us Blurb
+     ================================================== -->
+     <div class="col-md-8 col-md-offset-2">
+       <?php the_field('join_us_blurb'); ?>
+     </div><!-- col -->
+     <?php } ?>
 
    </div><!-- row -->
  </div><!-- container -->
