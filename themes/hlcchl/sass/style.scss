@@ -296,7 +296,8 @@ a {
 #hp-widgets {
   padding: 2.25em 0 5em;
   img {
-    width: 340px;
+    width: 100%;
+    max-width: 340px;
     height: 255px;
   }
   h3 {

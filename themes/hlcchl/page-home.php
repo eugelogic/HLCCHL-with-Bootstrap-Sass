@@ -43,47 +43,71 @@ get_header(); ?>
 
       <!-- 1st column
       ================================================== -->
+      <?php if (get_field('left_widget_image')) { ?>
       <!-- ACF init and vars -->
-      <?php
-        $left_widget_image = get_field('left_widget_image');
-      ?>
-      <div class="col-md-4">
-        <a href="<?php the_field('left_widget_link'); ?>"><img src="<?php echo $left_widget_image['url']; ?>" alt="<?php echo $left_widget_image['alt']; ?>"></a>
+        <?php
+          $left_widget_image = get_field('left_widget_image');
+        ?>
+        <div class="col-md-4">
+          <a href="<?php the_field('left_widget_link'); ?>"><img src="<?php echo $left_widget_image['url']; ?>" alt="<?php echo $left_widget_image['alt']; ?>"></a>
+      <?php } else { ?>
+        <div class="col-md-4">
+            <a href="<?php the_field('left_widget_link'); ?>"><img src="/wp-content/themes/hlcchl/assets/img/Holly Lodge Community Centre image placeholder.jpg" alt="Holly Lodge Community Centre image placeholder"></a>
+      <?php } ?>
+
         <h3><?php the_field('left_widget_title'); ?></h3>
         <p><?php the_field('left_widget_copy'); ?></p>
+
         <div class="btn-case">
           <p><a href="<?php the_field('left_widget_link'); ?>" class="btn btn-default" role="button"><?php the_field('left_widget_button_text'); ?></a></p>
         </div><!-- btn-case -->
+
       </div><!-- col -->
 
       <!-- 2nd column
       ================================================== -->
+      <?php if (get_field('central_widget_image')) { ?>
       <!-- ACF init and vars -->
       <?php
         $central_widget_image = get_field('central_widget_image');
       ?>
       <div class="col-md-4">
         <a href="<?php the_field('central_widget_link'); ?>"><img src="<?php echo $central_widget_image['url']; ?>" alt="<?php echo $central_widget_image['alt']; ?>"></a>
+      <?php } else { ?>
+        <div class="col-md-4">
+          <a href="<?php the_field('central_widget_link'); ?>"><img src="/wp-content/themes/hlcchl/assets/img/Holly Lodge Community Centre image placeholder.jpg" alt="Holly Lodge Community Centre image placeholder"></a>
+      <?php } ?>
+
         <h3><?php the_field('central_widget_title'); ?></h3>
         <p><?php the_field('central_widget_copy'); ?></p>
+
         <div class="btn-case">
           <p><a href="<?php the_field('central_widget_link'); ?>" class="btn btn-default" role="button"><?php the_field('central_widget_button_text'); ?></a></p>
         </div><!-- btn-case -->
+
       </div><!-- col -->
 
       <!-- 3rd column
       ================================================== -->
+      <?php if (get_field('right_widget_image')) { ?>
       <!-- ACF init and vars -->
       <?php
         $right_widget_image = get_field('right_widget_image');
       ?>
       <div class="col-md-4">
         <a href="<?php the_field('right_widget_link'); ?>"><img src="<?php echo $right_widget_image['url']; ?>" alt="<?php echo $right_widget_image['alt']; ?>"></a>
+      <?php } else { ?>
+        <div class="col-md-4">
+          <a href="<?php the_field('right_widget_link'); ?>"><img src="/wp-content/themes/hlcchl/assets/img/Holly Lodge Community Centre image placeholder.jpg" alt="Holly Lodge Community Centre image placeholder"></a>
+      <?php } ?>
+
         <h3><?php the_field('right_widget_title'); ?></h3>
         <p><?php the_field('right_widget_copy'); ?></p>
+
         <div class="btn-case">
           <p><a href="<?php the_field('right_widget_link'); ?>" class="btn btn-default" role="button"><?php the_field('right_widget_button_text'); ?></a></p>
         </div><!-- btn-case -->
+
       </div><!-- col -->
 
     </div><!-- row -->
