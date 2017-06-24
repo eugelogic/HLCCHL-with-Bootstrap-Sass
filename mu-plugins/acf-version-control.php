@@ -751,7 +751,6 @@ if(function_exists("register_field_group"))
 				'type' => 'image',
 				'instructions' => 'Select the image for the left hand side widget.<br>
 	Make sure that the image has a 1.3 ratio(width/height), ie (680 x 510)px.',
-				'required' => 1,
 				'save_format' => 'object',
 				'preview_size' => 'medium',
 				'library' => 'all',
@@ -822,7 +821,6 @@ if(function_exists("register_field_group"))
 				'type' => 'image',
 				'instructions' => 'Select the image for the central widget.<br>
 	Make sure that the image has a 1.3 ratio(width/height), ie (680 x 510)px.',
-				'required' => 1,
 				'save_format' => 'object',
 				'preview_size' => 'medium',
 				'library' => 'all',
@@ -893,7 +891,6 @@ if(function_exists("register_field_group"))
 				'type' => 'image',
 				'instructions' => 'Select the image for the right hand side widget.<br>
 	Make sure that the image has a 1.3 ratio(width/height), ie (680 x 510)px.',
-				'required' => 1,
 				'save_format' => 'object',
 				'preview_size' => 'medium',
 				'library' => 'all',
