@@ -13,6 +13,7 @@ get_header(); ?>
   <div class="container">
     <div class="row">
 
+      <?php if (get_field('nursery_image')) { ?>
       <!-- BLURB SECTION
       ================================================== -->
       <div class="col-md-6">
@@ -27,6 +28,14 @@ get_header(); ?>
         ?>
         <img src="<?php echo $nursery_image['url']; ?>" alt="<?php echo $nursery_image['alt']; ?>">
       </div><!-- col -->
+
+      <?php } else { ?>
+      <!-- BLURB SECTION
+      ================================================== -->
+      <div class="col-md-6 col-md-offset-3">
+        <?php the_field('nursery_copy'); ?>
+      </div><!-- col -->
+      <?php } ?>
 
     </div><!-- row -->
   </div><!-- container -->
