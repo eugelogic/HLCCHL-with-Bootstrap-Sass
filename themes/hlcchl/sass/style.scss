@@ -556,6 +556,16 @@ footer {
 
 #support-join-us {
   margin: $very-large-spacing 0;
+  .btn-case {
+    margin-top: $reg-spacing;
+    text-align: center;
+  }
+  .btn-join-us {
+    @include white-button-alt();
+    &:hover {
+      @include green-button();
+    }
+  }
   img {
     text-align: center;
     width: 100%;

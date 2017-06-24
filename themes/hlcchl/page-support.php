@@ -58,6 +58,9 @@ get_header(); ?>
      ================================================== -->
      <div class="col-md-6">
        <?php the_field('join_us_blurb'); ?>
+       <div class="btn-case">
+         <p><a href="<?php the_field('join_us_button_link'); ?>" class="btn btn-primary btn-join-us" role="button"><?php the_field('join_us_button_text'); ?></a></p>
+       </div><!-- btn-case -->
      </div><!-- col -->
 
      <!-- Join Us Image
@@ -74,6 +77,9 @@ get_header(); ?>
      ================================================== -->
      <div class="col-md-8 col-md-offset-2">
        <?php the_field('join_us_blurb'); ?>
+       <div class="btn-case">
+         <p><a href="<?php the_field('join_us_button_link'); ?>" class="btn btn-primary btn-join-us" role="button"><?php the_field('join_us_button_text'); ?></a></p>
+       </div><!-- btn-case -->
      </div><!-- col -->
      <?php } ?>
 

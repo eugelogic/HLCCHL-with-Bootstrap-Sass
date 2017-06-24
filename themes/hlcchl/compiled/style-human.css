@@ -1058,6 +1058,28 @@ footer a:hover {
 #support-join-us {
   margin: 3em 0;
 }
+#support-join-us .btn-case {
+  margin-top: 1em;
+  text-align: center;
+}
+#support-join-us .btn-join-us {
+  color: #189960;
+  background-color: #ffffff;
+  border: 1px solid #189960;
+  border-radius: 0.25em;
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica", sans-serif;
+  padding: 1em 2em;
+}
+#support-join-us .btn-join-us:hover {
+  color: #ffffff;
+  background-color: #189960;
+  border: 1px solid #189960;
+  border-radius: 0.25em;
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica", sans-serif;
+  padding: 1em 2em;
+}
 #support-join-us img {
   text-align: center;
   width: 100%;
