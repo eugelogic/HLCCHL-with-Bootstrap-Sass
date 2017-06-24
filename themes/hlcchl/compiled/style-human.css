@@ -903,6 +903,10 @@ footer a:hover {
 #hall-gallery img {
   width: 100%;
 }
+#hall-gallery .missing-gallery {
+  text-align: center;
+  margin-bottom: 2em;
+}
 
 #bottom-cta {
   color: #ffffff;
