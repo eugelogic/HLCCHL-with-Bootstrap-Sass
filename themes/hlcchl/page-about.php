@@ -15,6 +15,7 @@ get_header(); ?>
  <div class="container">
    <div class="row">
 
+     <?php if (get_field('top_section_image')) { ?>
      <!-- BLURB
      ================================================== -->
      <div class="col-md-6">
@@ -29,6 +30,14 @@ get_header(); ?>
        ?>
        <img src="<?php echo $top_section_image['url']; ?>" alt="<?php echo $top_section_image['alt']; ?>">
      </div><!-- col -->
+
+     <?php } else { ?>
+     <!-- BLURB
+     ================================================== -->
+     <div class="col-md-6 col-md-offset-3">
+       <?php the_field('top_section_copy'); ?>
+     </div><!-- col -->
+     <?php } ?>
 
    </div><!-- row -->
  </div><!-- container -->

@@ -481,9 +481,7 @@ footer {
 /*--------------------------------------------------------------
 11.0 ABOUT US PAGE
 --------------------------------------------------------------*/
-
 #about-top-section h3,
-#about-map-section h3,
 #about-bottom-section h3 {
   margin-top: 0;
 }
@@ -495,7 +493,7 @@ footer {
   }
 }
 
-#map-section {
+#about-map-section {
   text-align: center;
   margin: $very-large-spacing 0;
 }
