@@ -760,7 +760,8 @@ a:hover {
   padding: 2.25em 0 5em;
 }
 #hp-widgets img {
-  width: 340px;
+  width: 100%;
+  max-width: 340px;
   height: 255px;
 }
 #hp-widgets h3 {
