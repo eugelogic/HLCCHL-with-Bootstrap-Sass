@@ -40,7 +40,11 @@ get_header(); ?>
 
      <!-- The Gallery
      ================================================== -->
-     <?php the_field('image_gallery'); ?>
+     <?php if (get_field('image_gallery')) { ?>
+       <?php the_field('image_gallery'); ?>
+     <?php } else { ?>
+       <h4 class="missing-gallery">Image Gallery Coming Soon</h4>
+     <?php } ?>
 
    </div><!-- row -->
  </div><!-- container -->
