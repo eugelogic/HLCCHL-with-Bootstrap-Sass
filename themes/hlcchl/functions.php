@@ -156,8 +156,64 @@ function hlcchl_post_cats() {
 endif;
 
 /**
- * Implement the Custom Header feature.
+ * Helper function to get escaped field from ACF and also normalize values.
+ * As seen here https://snippets.khromov.se/sanitizing-and-securing-advanced-custom-fields-output/
+ *
+ * @param $field_key
+ * @param bool $post_id
+ * @param bool $format_value
+ * @param string $escape_method esc_html / esc_attr or NULL for none
+ * @return array|bool|string
  */
+function get_field_escaped($field_key, $post_id = false, $format_value = true, $escape_method = 'esc_html')
+{
+    $field = get_field($field_key, $post_id, $format_value);
+
+    /* Check for null and falsy values and always return space */
+    if($field === NULL || $field === FALSE)
+        $field = '';
+
+    /* Handle arrays */
+    if(is_array($field))
+    {
+        $field_escaped = array();
+        foreach($field as $key => $value)
+        {
+            $field_escaped[$key] = ($escape_method === NULL) ? $value : $escape_method($value);
+        }
+        return $field_escaped;
+    }
+    else
+        return ($escape_method === NULL) ? $field : $escape_method($field);
+}
+
+/**
+ * Wrapper function for get_field_escaped() that echoes the value isntead of returning it.
+ * As seen here https://snippets.khromov.se/sanitizing-and-securing-advanced-custom-fields-output/
+ *
+ * @param $field_key
+ * @param bool $post_id
+ * @param bool $format_value
+ * @param string $escape_method esc_html / esc_attr or NULL for none
+ */
+function the_field_escaped($field_key, $post_id = false, $format_value = true, $escape_method = 'esc_html')
+{
+    //Get field
+    $value = get_field_escaped($field_key, $post_id, $format_value, $escape_method );
+
+    //Print arrays as comma-separated strings, as per get_field() behaviour.
+    if( is_array($value) )
+    {
+        $value = @implode( ', ', $value );
+    }
+
+    //Echo result
+    echo $value;
+}
+
+ /**
+  * Implement the Custom Header feature.
+  */
 require get_template_directory() . '/inc/custom-header.php';
 
 /**
