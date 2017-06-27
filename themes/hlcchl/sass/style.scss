@@ -321,6 +321,18 @@ a {
   }
 }
 
+/* Medium to smaller screens */
+@media screen and (max-width: $query__large) {
+  #hp-widgets {
+    .col-md-4 {
+      margin-bottom: 4em;
+    }
+    p {
+      text-align: center;
+    }
+  }
+}
+
 /*--------------------------------------------------------------
 6.0 FOOTER
 --------------------------------------------------------------*/

@@ -796,6 +796,15 @@ a:hover {
   padding: 1em 2em;
 }
 
+/* Medium to smaller screens */
+@media screen and (max-width: 990px) {
+  #hp-widgets .col-md-4 {
+    margin-bottom: 4em;
+  }
+  #hp-widgets p {
+    text-align: center;
+  }
+}
 /*--------------------------------------------------------------
 6.0 FOOTER
 --------------------------------------------------------------*/
