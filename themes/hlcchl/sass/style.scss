@@ -176,6 +176,14 @@ body {
   }
 }
 
+/* Very small screens */
+@media screen and (max-width: $query__small) {
+  #page-title-bar h1 {
+    margin: 0.5em;
+    font-size: 1.5em;
+  }
+}
+
 /* under medium-large screens */
 @media screen and (max-width: $query__medium-large)  {
   .container {
