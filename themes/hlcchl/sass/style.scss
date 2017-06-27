@@ -276,8 +276,19 @@ a {
   }
 }
 
-/* LATEST NEWS */
+/* Small screens */
+@media screen and (max-width: $query__medium) {
+  #hero {
+    h2 {
+      font-size: 2.5em;
+    }
+    h3 {
+      font-size: 1.25em;
+    }
+  }
+}
 
+/* LATEST NEWS */
 #latest {
   .latest-top {
     border-bottom: 1px solid $dark-grey;
