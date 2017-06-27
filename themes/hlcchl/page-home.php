@@ -49,7 +49,7 @@ get_header(); ?>
           $left_widget_image = get_field('left_widget_image');
         ?>
         <div class="col-md-4">
-          <a href="<?php the_field('left_widget_link'); ?>"><img src="<?php echo $left_widget_image['url']; ?>" alt="<?php echo $left_widget_image['alt']; ?>"></a>
+          <a href="<?php the_field('left_widget_link'); ?>"><img src="<?php echo esc_url($left_widget_image['url']); ?>" alt="<?php echo esc_attr($left_widget_image['alt']); ?>"></a>
       <?php } else { ?>
         <div class="col-md-4">
             <a href="<?php the_field('left_widget_link'); ?>"><img src="/wp-content/themes/hlcchl/assets/img/Holly Lodge Community Centre image placeholder.jpg" alt="Holly Lodge Community Centre image placeholder"></a>
@@ -72,7 +72,7 @@ get_header(); ?>
         $central_widget_image = get_field('central_widget_image');
       ?>
       <div class="col-md-4">
-        <a href="<?php the_field('central_widget_link'); ?>"><img src="<?php echo $central_widget_image['url']; ?>" alt="<?php echo $central_widget_image['alt']; ?>"></a>
+        <a href="<?php the_field('central_widget_link'); ?>"><img src="<?php echo esc_url($central_widget_image['url']); ?>" alt="<?php echo esc_attr($central_widget_image['alt']); ?>"></a>
       <?php } else { ?>
         <div class="col-md-4">
           <a href="<?php the_field('central_widget_link'); ?>"><img src="/wp-content/themes/hlcchl/assets/img/Holly Lodge Community Centre image placeholder.jpg" alt="Holly Lodge Community Centre image placeholder"></a>
@@ -95,7 +95,7 @@ get_header(); ?>
         $right_widget_image = get_field('right_widget_image');
       ?>
       <div class="col-md-4">
-        <a href="<?php the_field('right_widget_link'); ?>"><img src="<?php echo $right_widget_image['url']; ?>" alt="<?php echo $right_widget_image['alt']; ?>"></a>
+        <a href="<?php the_field('right_widget_link'); ?>"><img src="<?php echo esc_url($right_widget_image['url']); ?>" alt="<?php echo esc_attr($right_widget_image['alt']); ?>"></a>
       <?php } else { ?>
         <div class="col-md-4">
           <a href="<?php the_field('right_widget_link'); ?>"><img src="/wp-content/themes/hlcchl/assets/img/Holly Lodge Community Centre image placeholder.jpg" alt="Holly Lodge Community Centre image placeholder"></a>

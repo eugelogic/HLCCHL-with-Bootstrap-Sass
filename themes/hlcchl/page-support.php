@@ -69,7 +69,7 @@ get_header(); ?>
        <?php
        $join_us_image = get_field('join_us_img');
        ?>
-       <img src="<?php echo $join_us_image['url']; ?>" alt="<?php echo $join_us_image['alt']; ?>">
+       <img src="<?php echo esc_url($join_us_image['url']); ?>" alt="<?php echo esc_attr($join_us_image['alt']); ?>">
      </div><!-- col -->
 
      <?php } else { ?>

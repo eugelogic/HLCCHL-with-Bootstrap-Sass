@@ -26,7 +26,7 @@ get_header(); ?>
         <?php
         $nursery_image = get_field('nursery_image');
         ?>
-        <img src="<?php echo $nursery_image['url']; ?>" alt="<?php echo $nursery_image['alt']; ?>">
+        <img src="<?php echo esc_url($nursery_image['url']); ?>" alt="<?php echo esc_attr($nursery_image['alt']); ?>">
       </div><!-- col -->
 
       <?php } else { ?>

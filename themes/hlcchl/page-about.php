@@ -28,7 +28,7 @@ get_header(); ?>
        <?php
        $top_section_image = get_field('top_section_image');
        ?>
-       <img src="<?php echo $top_section_image['url']; ?>" alt="<?php echo $top_section_image['alt']; ?>">
+       <img src="<?php echo esc_url($top_section_image['url']); ?>" alt="<?php echo esc_attr($top_section_image['alt']); ?>">
      </div><!-- col -->
 
      <?php } else { ?>
@@ -69,7 +69,7 @@ get_header(); ?>
        <?php
        $bottom_section_rhs_img = get_field('bottom_section_rhs_img');
        ?>
-       <img src="<?php echo $bottom_section_rhs_img['url']; ?>" alt="<?php echo $bottom_section_rhs_img['alt']; ?>">
+       <img src="<?php echo esc_url($bottom_section_rhs_img['url']); ?>" alt="<?php echo esc_attr($bottom_section_rhs_img['alt']); ?>">
        <?php the_field('bottom_section_rhs_content'); ?>
      </div><!-- col -->
 
