@@ -769,6 +769,20 @@ a:hover {
   padding-top: 3em;
 }
 
+/* Very small screens */
+@media screen and (max-width: 360px) {
+  #latest .latest-top {
+    padding-bottom: 0;
+  }
+  #latest .latest-bottom {
+    padding-top: 1em;
+  }
+  #latest .latest-top h3,
+  #latest .latest-top p,
+  #latest .latest-bottom p {
+    font-size: 1em;
+  }
+}
 /*--------------------------------------------------------------
 5.0 HOMEPAGE WIDGETS
 --------------------------------------------------------------*/

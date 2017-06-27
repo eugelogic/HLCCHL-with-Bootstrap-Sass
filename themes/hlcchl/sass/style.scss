@@ -315,6 +315,23 @@ a {
   }
 }
 
+/* Very small screens */
+@media screen and (max-width: $query__small) {
+  #latest {
+    .latest-top {
+      padding-bottom: 0;
+    }
+    .latest-bottom {
+      padding-top: 1em;
+    }
+    .latest-top h3,
+    .latest-top p,
+    .latest-bottom p {
+      font-size: 1em;
+    }
+  }
+}
+
 /*--------------------------------------------------------------
 5.0 HOMEPAGE WIDGETS
 --------------------------------------------------------------*/
