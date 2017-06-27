@@ -18,23 +18,19 @@ get_header(); ?>
 					<!-- Start the Loop -->
 					<?php while ( have_posts() ) : the_post(); ?>
 
-					<!-- NEWS ARTICLE CONTENT
-					================================================== -->
-					<?php if ( has_post_thumbnail() ) : the_post_thumbnail(); ?>
- 					 <?php endif; ?>
+						<!-- NEWS ARTICLE CONTENT
+						================================================== -->
+						<?php if ( has_post_thumbnail() ) : the_post_thumbnail();
+	 					endif;
 
-					<?php get_template_part( 'template-parts/content', get_post_format() ); ?>
+						get_template_part( 'template-parts/content', get_post_format() );
 
-					<?php
-					/**
-					 *		// If comments are open or we have at least one comment, load up the comment template.
-					 *		if ( comments_open() || get_comments_number() ) :
-					 *			comments_template();
-					 * 		endif; ?>
-					 */
-					 ?>
+						// If comments are open or we have at least one comment, load up the comment template.
+						if ( comments_open() || get_comments_number() ) :
+						comments_template();
+						endif;
 
-					<?php endwhile; // End of the loop. ?>
+					endwhile; // End of the loop. ?>
 
 				</div><!-- row -->
 			</div><!-- col -->
