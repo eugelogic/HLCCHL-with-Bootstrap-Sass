@@ -737,6 +737,12 @@ a:hover {
   padding: 1em 2em;
 }
 
+/* Very small screens */
+@media screen and (max-width: 360px) {
+  #hero .btn1 {
+    margin-right: 0;
+  }
+}
 /* Small screens */
 @media screen and (max-width: 600px) {
   #hero h2 {
