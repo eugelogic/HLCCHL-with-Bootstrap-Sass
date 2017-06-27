@@ -276,6 +276,15 @@ a {
   }
 }
 
+/* Very small screens */
+@media screen and (max-width: $query__small) {
+  #hero {
+    .btn1 {
+      margin-right: 0;
+    }
+  }
+}
+
 /* Small screens */
 @media screen and (max-width: $query__medium) {
   #hero {
