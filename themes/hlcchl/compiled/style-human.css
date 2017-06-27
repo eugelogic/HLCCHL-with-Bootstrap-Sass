@@ -739,6 +739,14 @@ a:hover {
 
 /* Very small screens */
 @media screen and (max-width: 360px) {
+  .jumbotron {
+    padding: 0;
+  }
+
+  #hero .button-group {
+    padding: 1em 0;
+    margin-bottom: -0.7em;
+  }
   #hero .btn1 {
     margin-right: 0;
   }
