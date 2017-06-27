@@ -758,6 +758,9 @@ a:hover {
 #hp-widgets {
   padding: 2.25em 0 5em;
 }
+#hp-widgets .col-md-4 {
+  text-align: center;
+}
 #hp-widgets img {
   width: 100%;
   max-width: 340px;
@@ -767,7 +770,10 @@ a:hover {
   text-align: center;
   text-transform: uppercase;
 }
-#hp-widgets .btn-case {
+#hp-widgets p {
+  text-align: left;
+}
+#hp-widgets .btn-case > p {
   margin-top: 2em;
   text-align: center;
 }
