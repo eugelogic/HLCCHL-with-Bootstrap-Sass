@@ -743,6 +743,15 @@ a:hover {
   padding: 1em 2em;
 }
 
+/* Small screens */
+@media screen and (max-width: 600px) {
+  #hero h2 {
+    font-size: 2.5em;
+  }
+  #hero h3 {
+    font-size: 1.25em;
+  }
+}
 /* LATEST NEWS */
 #latest .latest-top {
   border-bottom: 1px solid #333333;
