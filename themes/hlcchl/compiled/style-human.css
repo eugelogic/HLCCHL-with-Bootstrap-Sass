@@ -79,120 +79,118 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-/* ------ New custom style from Morten's ------ */
-/* ------ large screens ------ */
-@media screen and (min-width: 600px) {
-  .menu-toggle {
-    display: none;
-  }
-
-  .dropdown-toggle {
-    background-color: transparent;
-    border: none;
-  }
-
-  .main-navigation {
-    border-top: 1px solid #189960;
-  }
-  .main-navigation .container {
-    width: 70%;
-  }
-  .main-navigation ul {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 0;
-  }
-  .main-navigation ul li {
-    display: inline;
-    font-family: 'Montserrat', 'Helvetica' , sans-serif;
-    text-transform: uppercase;
-    padding: 1.5em 0;
-  }
-  .main-navigation ul li a {
-    color: #333333;
-    padding: .4em .8em;
-  }
-  .main-navigation ul li a:hover {
-    text-decoration: none;
-    color: #189960;
-    padding-top: 1.4em;
-    border-top: 3px solid #189960;
-  }
-  .main-navigation ul li:nth-child(6) {
-    position: relative;
-  }
-  .main-navigation ul li:nth-child(6) .dropdown-toggle {
-    position: absolute;
-    top: 23px;
-    left: 115px;
-  }
-  .main-navigation ul li:nth-child(7) a {
-    color: #ffffff;
-    background-color: #189960;
-    border: 1px solid #189960;
-    border-radius: 0.25em;
-    text-transform: uppercase;
-    font-family: "Montserrat", "Helvetica", sans-serif;
-    padding: 1em;
-  }
-  .main-navigation ul li:nth-child(7) a:hover {
-    color: #189960;
-    background-color: #ffffff;
-    border: 1px solid #189960;
-    border-radius: 0.25em;
-    text-transform: uppercase;
-    font-family: "Montserrat", "Helvetica", sans-serif;
-    padding: 1em;
-  }
-  .main-navigation ul .current-menu-item {
-    color: #189960;
-    padding-top: 1.375em;
-    margin-top: 0;
-    border-top: 2px solid #189960;
-  }
-  .main-navigation ul ul {
-    display: none;
-    flex-direction: column;
-  }
-
-  .toggled-on ul,
-  .sub-menu.toggled-on {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    width: 160px;
-    left: 0;
-    margin: 0;
-    margin-top: 24px;
-    padding: 0;
-    z-index: 1;
-    border-top: 2px solid #189960;
-  }
-  .toggled-on ul li,
-  .sub-menu.toggled-on li {
-    margin-left: 0.5em;
-    padding: 0.975em 0;
-    font-size: 85%;
-    background-color: #ffffff;
-    border-bottom: 1px solid #ededed;
-  }
-  .toggled-on ul li:hover,
-  .sub-menu.toggled-on li:hover {
-    border: none;
-    background-color: #bcf4db;
-  }
-  .toggled-on ul li a,
-  .sub-menu.toggled-on li a {
-    background: none;
-  }
-  .toggled-on ul li a:hover,
-  .sub-menu.toggled-on li a:hover {
-    border: none;
-    color: #333333;
-  }
+/* ------ Large screens (> 800px) ------ */
+.menu-toggle {
+  display: none;
 }
-/* ------ smaller screens ? (Morten's) ------ */
+
+.dropdown-toggle {
+  background-color: transparent;
+  border: none;
+}
+
+.main-navigation {
+  border-top: 1px solid #189960;
+}
+.main-navigation .container {
+  width: 70%;
+}
+.main-navigation ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0;
+}
+.main-navigation ul li {
+  display: inline;
+  font-family: 'Montserrat', 'Helvetica' , sans-serif;
+  text-transform: uppercase;
+  padding: 1.5em 0;
+}
+.main-navigation ul li a {
+  color: #333333;
+  padding: .4em .8em;
+}
+.main-navigation ul li a:hover {
+  text-decoration: none;
+  color: #189960;
+  padding-top: 1.4em;
+  border-top: 3px solid #189960;
+}
+.main-navigation ul li:nth-child(6) {
+  position: relative;
+}
+.main-navigation ul li:nth-child(6) .dropdown-toggle {
+  position: absolute;
+  top: 23px;
+  left: 115px;
+}
+.main-navigation ul li:nth-child(7) a {
+  color: #ffffff;
+  background-color: #189960;
+  border: 1px solid #189960;
+  border-radius: 0.25em;
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica", sans-serif;
+  padding: 1em;
+}
+.main-navigation ul li:nth-child(7) a:hover {
+  color: #189960;
+  background-color: #ffffff;
+  border: 1px solid #189960;
+  border-radius: 0.25em;
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica", sans-serif;
+  padding: 1em;
+}
+.main-navigation ul .current-menu-item {
+  color: #189960;
+  padding-top: 1.375em;
+  margin-top: 0;
+  border-top: 2px solid #189960;
+}
+.main-navigation ul ul {
+  display: none;
+  flex-direction: column;
+}
+
+.toggled-on ul,
+.sub-menu.toggled-on {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 160px;
+  left: 0;
+  margin: 0;
+  margin-top: 24px;
+  padding: 0;
+  z-index: 1;
+  border-top: 2px solid #189960;
+}
+.toggled-on ul li,
+.sub-menu.toggled-on li {
+  margin-left: 0.5em;
+  padding: 0.975em 0;
+  font-size: 85%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ededed;
+}
+.toggled-on ul li:hover,
+.sub-menu.toggled-on li:hover {
+  border: none;
+  background-color: #bcf4db;
+}
+.toggled-on ul li a,
+.sub-menu.toggled-on li a {
+  background: none;
+}
+.toggled-on ul li a:hover,
+.sub-menu.toggled-on li a:hover {
+  border: none;
+  color: #333333;
+}
+
+/* ------ Smaller screens (< 800px) ------ */
 @media screen and (max-width: 800px) {
   .main-navigation {
     /* Sandwich menu icon */
