@@ -278,7 +278,14 @@ a {
 
 /* Very small screens */
 @media screen and (max-width: $query__small) {
+  .jumbotron {
+    padding: 0;
+  }
   #hero {
+    .button-group {
+      padding: 1em 0;
+      margin-bottom: -0.7em;
+    }
     .btn1 {
       margin-right: 0;
     }
