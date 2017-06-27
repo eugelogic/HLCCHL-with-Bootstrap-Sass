@@ -368,6 +368,7 @@ a {
 /* Medium to smaller screens */
 @media screen and (max-width: $query__large) {
   #hp-widgets {
+    padding-bottom: 0;
     .col-md-4 {
       margin-bottom: 4em;
     }
