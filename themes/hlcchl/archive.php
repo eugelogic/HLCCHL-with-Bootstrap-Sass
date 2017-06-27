@@ -51,9 +51,11 @@
  			 </div><!-- post-wrapper -->
  		 </div><!-- col -->
 
- 				<?php endwhile; ?>
+ 				<?php endwhile;
 
- 				<?php endif;  ?>
+        the_posts_navigation();
+
+ 				endif;  ?>
 
  					</div><!-- row -->
  			</div><!-- col -->
