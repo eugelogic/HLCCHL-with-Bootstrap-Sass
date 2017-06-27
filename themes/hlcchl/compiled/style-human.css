@@ -829,6 +829,9 @@ a:hover {
 
 /* Medium to smaller screens */
 @media screen and (max-width: 990px) {
+  #hp-widgets {
+    padding-bottom: 0;
+  }
   #hp-widgets .col-md-4 {
     margin-bottom: 4em;
   }
