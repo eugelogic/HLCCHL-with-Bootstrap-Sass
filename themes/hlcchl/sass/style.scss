@@ -294,6 +294,9 @@ a {
 
 #hp-widgets {
   padding: 2.25em 0 5em;
+  .col-md-4 {
+    text-align: center;
+  }
   img {
     width: 100%;
     max-width: 340px;
@@ -303,7 +306,10 @@ a {
     text-align: center;
     text-transform: uppercase;
   }
-  .btn-case {
+  p {
+    text-align: left;
+  }
+  .btn-case > p {
     margin-top: $large-spacing;
     text-align: center;
   }
