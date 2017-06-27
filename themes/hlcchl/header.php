@@ -50,7 +50,7 @@
     ================================================== -->
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<div class="container">
-				<button class="menu-toggle" aria-controls="header-menu" aria-expanded="false"><?php esc_html_e( 'Ξ Menu', 'hlcchl' ); ?></button>
+				<button class="menu-toggle" aria-controls="header-menu" aria-expanded="false"><?php esc_html_e( '&#926; Menu', 'hlcchl' ); ?></button>
 				<?php
 				wp_nav_menu( array(
 					'theme_location' => 'header-menu',
