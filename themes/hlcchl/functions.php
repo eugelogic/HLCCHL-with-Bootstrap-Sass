@@ -105,7 +105,7 @@ add_action( 'widgets_init', 'hlcchl_widgets_init' );
  * Enqueue scripts and styles.
  */
 function hlcchl_scripts() {
-	// Default entries of _S
+	// Default entries of _S.
 	wp_enqueue_style( 'hlcchl-style', get_stylesheet_uri(), array('bootstrap_css') );
 	wp_enqueue_script( 'hlcchl-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20151215', true );
 	wp_enqueue_script( 'hlcchl-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
@@ -113,19 +113,19 @@ function hlcchl_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
-	// Eugene's entries
+	// Eugene's entries.
  wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/assets/css/bootstrap.min.css');
  wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery'), '20170602', true );
  wp_enqueue_style( 'google_fonts', 'https://fonts.googleapis.com/css?family=Montserrat:400,700|PT+Sans');
 
- // Support for IE9
+ // Support for IE9.
  global $wp_scripts;
  wp_register_script('html5_shiv', 'https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js', '', '', false );
  wp_register_script('respond_js', 'https://oss.maxcdn.com/respond/1.4.2/respond.min.js', '', '', false );
  $wp_scripts->add_data('html5_shiv', 'conditional', 'lt IE 9');
  $wp_scripts->add_data('respond_js', 'conditional', 'lt IE 9');
 
- // Pass ScreenReaderText string from php to js in order to be translated
+ // Pass ScreenReaderText string from php to js in order to be translated.
  wp_localize_script('hlcchl-navigation', 'hlcchlScreenReaderText', array(
   	'expand' => __('Expand child menu', 'hlcchl'),
 		'collapse' => __('Collapse child menu', 'hlcchl'),
