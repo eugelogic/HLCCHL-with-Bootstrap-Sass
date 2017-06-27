@@ -1309,6 +1309,7 @@ footer a:hover {
   border-width: 1px;
   border-color: #189960;
   margin-left: -0.25em;
+  padding: 0;
 }
 #searchform .search-submit:hover {
   color: #189960;
