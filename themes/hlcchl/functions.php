@@ -211,6 +211,15 @@ function the_field_escaped($field_key, $post_id = false, $format_value = true, $
     echo $value;
 }
 
+/**
+ * Hide Customize admin menu label
+ */
+function adjust_the_wp_menu () {
+       global $submenu;
+        unset($submenu['themes.php'][6]);
+}
+add_action('admin_menu', 'adjust_the_wp_menu');
+
  /**
   * Implement the Custom Header feature.
   */
