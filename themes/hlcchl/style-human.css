@@ -938,6 +938,7 @@ footer a:hover {
 }
 #news-single .wp-post-image {
   width: 100%;
+  height: initial;
 }
 #news-single p {
   margin: 2em 0;

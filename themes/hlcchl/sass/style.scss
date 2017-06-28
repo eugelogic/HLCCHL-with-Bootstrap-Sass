@@ -469,11 +469,11 @@ footer {
 /*--------------------------------------------------------------
 8.5 NEWS SINGLE PAGE
 --------------------------------------------------------------*/
-
 #news-single {
   margin: $very-large-spacing 0;
   .wp-post-image {
     width: 100%;
+    height: initial;
   }
   p {
     margin: $large-spacing 0;
