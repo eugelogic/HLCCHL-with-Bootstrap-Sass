@@ -176,6 +176,10 @@ body {
   }
 }
 
+#comments {
+  display: none;
+}
+
 /* Very small screens */
 @media screen and (max-width: $query__small) {
   #page-title-bar h1 {
