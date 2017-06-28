@@ -615,7 +615,6 @@ footer {
 /*--------------------------------------------------------------
 13.0 SUPPORT US PAGE
 --------------------------------------------------------------*/
-
 #support-top-section {
   margin: $very-large-spacing 0;
 }
@@ -659,6 +658,25 @@ footer {
   img {
     text-align: center;
     width: 100%;
+  }
+}
+
+/* Smaller screens */
+@media screen and (max-width: $query__large) {
+  #support-top-section {
+    margin: 3em 0 0;
+  }
+  #support-ctas {
+    margin: 1em 0;
+    .lhs {
+      margin-bottom: 3em;
+    }
+  }
+  #support-join-us {
+    margin: 0 0 3em;
+    .join-us {
+      margin-bottom: 3em;
+    }
   }
 }
 

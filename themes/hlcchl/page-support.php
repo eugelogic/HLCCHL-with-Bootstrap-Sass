@@ -27,7 +27,7 @@ get_header(); ?>
 
      <!-- Left Hand Side CTA
      ================================================== -->
-     <div class="col-md-6">
+     <div class="col-md-6 lhs">
        <?php the_field('lhs_cta_copy'); ?>
        <div class="btn-case">
          <p><a href="<?php the_field('lhs_cta_button_link'); ?>" target="_blank" class="btn btn-primary btn-left" role="button"><?php the_field('lhs_cta_button_text'); ?></a></p>
@@ -56,7 +56,7 @@ get_header(); ?>
      <?php if (get_field('join_us_img')) { ?>
      <!-- Join Us Blurb
      ================================================== -->
-     <div class="col-md-6">
+     <div class="col-md-6 join-us">
        <?php the_field('join_us_blurb'); ?>
        <div class="btn-case">
          <p><a href="<?php the_field('join_us_button_link'); ?>" class="btn btn-primary btn-join-us" role="button"><?php the_field('join_us_button_text'); ?></a></p>

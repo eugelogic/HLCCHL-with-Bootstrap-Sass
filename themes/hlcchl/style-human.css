@@ -1167,6 +1167,26 @@ footer a:hover {
   width: 100%;
 }
 
+/* Smaller screens */
+@media screen and (max-width: 990px) {
+  #support-top-section {
+    margin: 3em 0 0;
+  }
+
+  #support-ctas {
+    margin: 1em 0;
+  }
+  #support-ctas .lhs {
+    margin-bottom: 3em;
+  }
+
+  #support-join-us {
+    margin: 0 0 3em;
+  }
+  #support-join-us .join-us {
+    margin-bottom: 3em;
+  }
+}
 /*--------------------------------------------------------------
 14.0 CONTACT US PAGE
 --------------------------------------------------------------*/
