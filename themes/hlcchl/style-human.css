@@ -924,6 +924,12 @@ footer a:hover {
   margin-left: 0.5em;
 }
 
+/* Smaller screens */
+@media screen and (max-width: 800px) {
+  .hentry {
+    margin: 0 1em 1.5em;
+  }
+}
 /*--------------------------------------------------------------
 8.5 NEWS SINGLE PAGE
 --------------------------------------------------------------*/
