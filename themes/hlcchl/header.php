@@ -27,7 +27,7 @@
 	================================================== -->
 	<header id="masthead" class="site-header" role="banner">
 
-    <!-- TOP BAR
+		<!-- TOP BAR
     ================================================== -->
     <section id="top-bar">
       <div class="container">
@@ -54,18 +54,18 @@
 				<?php
 				wp_nav_menu( array(
 					'theme_location' => 'header-menu',
-					'menu_id' => 'header-menu'
+					'menu_id' => 'header-menu',
 				) );
 				?>
 			</div><!-- container -->
 		</nav><!-- #site-navigation -->
 
-		<?php if (! is_front_page()) : ?>
+		<?php if ( ! is_front_page() ) : ?>
 		 <!-- PAGE TITLE BAR
 	   ================================================== -->
 	   <div class="jumbotron" id="page-title-bar">
 	     <div class="container">
-	       <h1><?php wp_title(''); ?></h1>
+	       <h1><?php wp_title( '' ); ?></h1>
 	     </div><!-- container -->
 	   </div><!-- jumbo -->
 		<?php endif;?>
