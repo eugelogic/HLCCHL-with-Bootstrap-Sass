@@ -16,7 +16,7 @@ get_header(); ?>
       <?php if (get_field('nursery_image')) { ?>
       <!-- BLURB SECTION
       ================================================== -->
-      <div class="col-md-6">
+      <div class="col-md-6 par">
         <?php the_field('nursery_copy'); ?>
       </div><!-- col -->
 

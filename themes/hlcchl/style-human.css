@@ -1033,6 +1033,12 @@ footer a:hover {
   width: 100%;
 }
 
+/* Smaller screens */
+@media screen and (max-width: 990px) {
+  #nursery .par {
+    margin-bottom: 2em;
+  }
+}
 /*--------------------------------------------------------------
 11.0 ABOUT US PAGE
 --------------------------------------------------------------*/
