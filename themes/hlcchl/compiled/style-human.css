@@ -616,6 +616,10 @@ body {
   text-transform: uppercase;
 }
 
+#comments {
+  display: none;
+}
+
 /* Very small screens */
 @media screen and (max-width: 360px) {
   #page-title-bar h1 {
