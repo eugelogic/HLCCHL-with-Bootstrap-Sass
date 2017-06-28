@@ -459,6 +459,13 @@ footer {
   }
 }
 
+/* Smaller screens */
+@media screen and (max-width: $query__medium-large) {
+  .hentry {
+  	margin: 0 1em 1.5em;
+  }
+}
+
 /*--------------------------------------------------------------
 8.5 NEWS SINGLE PAGE
 --------------------------------------------------------------*/
