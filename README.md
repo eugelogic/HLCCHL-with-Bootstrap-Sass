@@ -15,3 +15,5 @@ Website main features:
 - <a href="https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards" target="_blank">WordPress coding standards</a>
 
 The new theme will replace Avada on the <a href="https://www.hlcchl.org/" target="_blank">current installation</a> to make the website much faster, lighter and more secure.
+
+I also wrote a <a href="http://webjigsaw.com/from-avada-to-underscores-theme/" target="_blank">blog post about the whole process</a>, please let me know if you have questions and/or feedback.
