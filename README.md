@@ -14,6 +14,6 @@ Website main features:
 - <a href="https://github.com/wpmark/flexible-featured-post-widget" target="_blank">WordPress custom widget</a>
 - <a href="https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards" target="_blank">WordPress coding standards</a>
 
-For the sake of comparing & legacy, you can also <a href="https://www.hlcchl.org/" target="_blank">see the old site running on Avada here.</a>
+For the sake of comparing & legacy, you can also <a href="http://www.avada-hlcchl.org/" target="_blank">see the old site running on Avada here.</a>
 
 I also wrote a <a href="http://webjigsaw.com/from-avada-to-underscores-theme/" target="_blank">blog post about the whole process</a>, please let me know if you have questions and/or feedback.
