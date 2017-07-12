@@ -136,6 +136,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 18.5 SEARCH FORM
 19.0 WIDGETS
 20.0 CALENDAR
+21.0 404 PAGE
  X.0 MEDIA QUERIES
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -945,6 +946,17 @@ footer {
   color: $green;
   margin: 0.75em 0 1em;
   padding: 0.5em 2em 0.5em 1em;
+}
+
+/*--------------------------------------------------------------
+21.0 404 PAGE
+--------------------------------------------------------------*/
+.not-found {
+  min-height: 29em;
+}
+
+.not-found-form {
+  margin-top: 7em;
 }
 
 /*--------------------------------------------------------------

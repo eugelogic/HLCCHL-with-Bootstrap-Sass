@@ -9,7 +9,7 @@
 
 ?>
 
-<section class="no-results not-found">
+<section class="no-results">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8">
