@@ -1,4 +1,4 @@
-	<?php
+<?php
 	/**
 	 * The main template file
 	 *
@@ -30,25 +30,25 @@
 			 <!-- NEWS INDEX GRID
 			 ================================================== -->
 			 <div class="col-md-6">
-			 		<div class="post-wrapper">
+					 <div class="post-wrapper">
 
-					 <?php if ( has_post_thumbnail() ) : ?>
-					     <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-					         <?php the_post_thumbnail(); ?>
-					     </a>
-					 <?php endif; ?>
+						<?php if ( has_post_thumbnail() ) : ?>
+						 <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+								<?php the_post_thumbnail(); ?>
+						 </a>
+						<?php endif; ?>
 
 					 <div class="post-meta">
-						 <?php the_title( '<h4><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h4>' ); ?>
+							<?php the_title( '<h4><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h4>' ); ?>
 						 <p class="small"><?php the_date(); ?> | Categories: <?php the_category( ', ' ); ?></p>
 						 <div class="post-separator"></div>
-						 <?php the_excerpt(); ?>
+							<?php the_excerpt(); ?>
 						 <a href="<?php the_permalink(); ?>" class="read-more">Read More</a>
 					 </div><!-- post-meta -->
 				 </div><!-- post-wrapper -->
 			 </div><!-- col -->
 
-		 			<?php endwhile;
+						<?php endwhile;
 
 					the_posts_navigation();
 
