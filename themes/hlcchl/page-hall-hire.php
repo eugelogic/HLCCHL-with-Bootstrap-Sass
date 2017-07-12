@@ -15,17 +15,17 @@ get_header(); ?>
  <div class="container">
    <div class="row">
 
-     <!-- BLURB SECTION
-     ================================================== -->
-     <div class="col-md-8">
-       <?php the_field('hall_hire_copy'); ?>
-     </div><!-- col -->
+	 <!-- BLURB SECTION
+	 ================================================== -->
+	 <div class="col-md-8">
+		<?php the_field( 'hall_hire_copy' ); ?>
+	 </div><!-- col -->
 
-     <!-- MAP SECTION
-     ================================================== -->
-     <div class="col-md-4">
-       <?php the_field('hall_hire_map'); ?>
-     </div><!-- col -->
+	 <!-- MAP SECTION
+	 ================================================== -->
+	 <div class="col-md-4">
+		<?php the_field( 'hall_hire_map' ); ?>
+	 </div><!-- col -->
 
    </div><!-- row -->
  </div><!-- container -->
@@ -36,15 +36,15 @@ get_header(); ?>
 <section id="hall-gallery">
  <div class="container">
    <div class="row">
-     <h3><?php the_field('gallery_title'); ?></h3>
+	 <h3><?php the_field( 'gallery_title' ); ?></h3>
 
-     <!-- The Gallery
-     ================================================== -->
-     <?php if (get_field('image_gallery')) { ?>
-       <?php the_field('image_gallery'); ?>
-     <?php } else { ?>
-       <h4 class="missing-gallery">Image Gallery Coming Soon</h4>
-     <?php } ?>
+	 <!-- The Gallery
+	 ================================================== -->
+		<?php if ( get_field( 'image_gallery' ) ) { ?>
+		<?php the_field( 'image_gallery' ); ?>
+		<?php } else { ?>
+	   <h4 class="missing-gallery">Image Gallery Coming Soon</h4>
+		<?php } ?>
 
    </div><!-- row -->
  </div><!-- container -->
@@ -56,15 +56,15 @@ get_header(); ?>
  <div class="container">
    <div class="row">
 
-     <div class="col-md-8">
-       <h3><?php the_field('cta_message'); ?></h3>
-     </div><!-- col-md-8 -->
+	 <div class="col-md-8">
+	   <h3><?php the_field( 'cta_message' ); ?></h3>
+	 </div><!-- col-md-8 -->
 
-     <div class="col-md-4">
-       <div class="btn-case">
-         <p><a href="<?php the_field('cta_button_link'); ?>" class="btn btn-primary" role="button"><?php the_field('cta_button_text'); ?></a></p>
-       </div><!-- btn-case -->
-     </div><!-- col-md-4 -->
+	 <div class="col-md-4">
+	   <div class="btn-case">
+		 <p><a href="<?php the_field( 'cta_button_link' ); ?>" class="btn btn-primary" role="button"><?php the_field( 'cta_button_text' ); ?></a></p>
+	   </div><!-- btn-case -->
+	 </div><!-- col-md-4 -->
 
    </div><!-- row -->
  </div><!-- container -->
