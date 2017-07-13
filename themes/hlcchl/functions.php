@@ -159,17 +159,17 @@ endif;
  * Helper function to get escaped field from ACF and also normalize values.
  * As seen here https://snippets.khromov.se/sanitizing-and-securing-advanced-custom-fields-output/
  *
- * @param $field_key
- * @param bool      $post_id
- * @param bool      $format_value
- * @param string    $escape_method esc_html / esc_attr or NULL for none
+ * @param mixed  $field_key (please add comment).
+ * @param bool   $post_id (please add comment).
+ * @param bool   $format_value (please add comment).
+ * @param string $escape_method esc_html / esc_attr or NULL for none.
  * @return array|bool|string
  */
 function get_field_escaped( $field_key, $post_id = false, $format_value = true, $escape_method = 'esc_html' ) {
 	$field = get_field( $field_key, $post_id, $format_value );
 
 	/* Check for null and falsy values and always return space */
-	if ( $field === null || $field === false ) {
+	if ( null === $field || false === $field ) {
 		$field = '';
 	}
 
@@ -177,10 +177,10 @@ function get_field_escaped( $field_key, $post_id = false, $format_value = true, 
 	if ( is_array( $field ) ) {
 		$field_escaped = array();
 		foreach ( $field as $key => $value ) {
-			$field_escaped[ $key ] = ($escape_method === null) ? $value : $escape_method($value);
+			$field_escaped[ $key ] = (null === $escape_method) ? $value : $escape_method($value);
 		}
 		return $field_escaped;
-	} else { 		return ($escape_method === null) ? $field : $escape_method($field);
+	} else { 		return (null === $escape_method) ? $field : $escape_method($field);
 	}
 }
 
@@ -188,10 +188,10 @@ function get_field_escaped( $field_key, $post_id = false, $format_value = true, 
  * Wrapper function for get_field_escaped() that echoes the value isntead of returning it.
  * As seen here https://snippets.khromov.se/sanitizing-and-securing-advanced-custom-fields-output/
  *
- * @param $field_key
- * @param bool      $post_id
- * @param bool      $format_value
- * @param string    $escape_method esc_html / esc_attr or NULL for none
+ * @param mixed  $field_key (please add comment).
+ * @param bool   $post_id (please add comment).
+ * @param bool   $format_value (please add comment).
+ * @param string $escape_method esc_html / esc_attr or NULL for none.
  */
 function the_field_escaped( $field_key, $post_id = false, $format_value = true, $escape_method = 'esc_html' ) {
 	// Get field.
