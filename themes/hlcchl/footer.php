@@ -15,8 +15,8 @@
 ================================================== -->
 <footer>
 	<div class="container">
-		<p>Holly Lodge Community Centre is a registered charity 293003 2013-2016<br />
-		Website by <a href="http://webjigsaw.com/" target="_blank">Web Jigsaw</a> | Obviously powered by <a href="https://wordpress.org/" target="_blank">WordPress</a>.
+		<p>Holly Lodge Community Centre is a registered charity 293003 2013-2017<br />
+		Website by <a href="http://webjigsaw.com/" target="_blank" rel="noopener noreferrer">Web Jigsaw</a> | Obviously powered by <a href="https://wordpress.org/" target="_blank" rel="noopener noreferrer">WordPress</a>.
 		</p>
 	</div><!-- container -->
 </footer>
