@@ -11,33 +11,33 @@ get_header(); ?>
 
 <section id="nursery">
   <div class="container">
-    <div class="row">
+	<div class="row">
 
-      <?php if (get_field('nursery_image')) { ?>
-      <!-- BLURB SECTION
-      ================================================== -->
-      <div class="col-md-6 par">
-        <?php the_field('nursery_copy'); ?>
-      </div><!-- col -->
+		<?php if ( get_field( 'nursery_image' ) ) { ?>
+	  <!-- BLURB SECTION
+	  ================================================== -->
+	  <div class="col-md-6 par">
+		<?php the_field( 'nursery_copy' ); ?>
+	  </div><!-- col -->
 
-      <!-- IMAGE SECTION
-      ================================================== -->
-      <div class="col-md-6">
-        <?php
-        $nursery_image = get_field('nursery_image');
-        ?>
-        <img src="<?php echo esc_url($nursery_image['url']); ?>" alt="<?php echo esc_attr($nursery_image['alt']); ?>">
-      </div><!-- col -->
+	  <!-- IMAGE SECTION
+	  ================================================== -->
+	  <div class="col-md-6">
+		<?php
+		$nursery_image = get_field( 'nursery_image' );
+		?>
+		<img src="<?php echo esc_url( $nursery_image['url'] ); ?>" alt="<?php echo esc_attr( $nursery_image['alt'] ); ?>">
+	  </div><!-- col -->
 
-      <?php } else { ?>
-      <!-- BLURB SECTION
-      ================================================== -->
-      <div class="col-md-6 col-md-offset-3">
-        <?php the_field('nursery_copy'); ?>
-      </div><!-- col -->
-      <?php } ?>
+		<?php } else { ?>
+	  <!-- BLURB SECTION
+	  ================================================== -->
+	  <div class="col-md-6 col-md-offset-3">
+		<?php the_field( 'nursery_copy' ); ?>
+	  </div><!-- col -->
+		<?php } ?>
 
-    </div><!-- row -->
+	</div><!-- row -->
   </div><!-- container -->
 </section>
 
