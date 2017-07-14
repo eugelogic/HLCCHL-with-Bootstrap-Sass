@@ -19,6 +19,7 @@ get_header(); ?>
 			<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
+				/* translators: %s: search term */
 				<h2 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'hlcchl' ), '<span>' . get_search_query() . '</span>' ); ?></h2>
 			</header><!-- .page-header -->
 
@@ -32,17 +33,17 @@ get_header(); ?>
 		 <div class="col-md-6">
 				<div class="post-wrapper">
 
-				 <?php if ( has_post_thumbnail() ) : ?>
+					<?php if ( has_post_thumbnail() ) : ?>
 						 <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-								 <?php the_post_thumbnail(); ?>
+									<?php the_post_thumbnail(); ?>
 						 </a>
-				 <?php endif; ?>
+					<?php endif; ?>
 
 				 <div class="post-meta">
-					 <?php the_title( '<h4><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h4>' ); ?>
+						<?php the_title( '<h4><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h4>' ); ?>
 					 <p class="small"><?php the_date(); ?> | Categories: <?php the_category( ', ' ); ?></p>
 					 <div class="post-separator"></div>
-					 <?php the_excerpt(); ?>
+						<?php the_excerpt(); ?>
 					 <a href="<?php the_permalink(); ?>" class="read-more">Read More</a>
 				 </div><!-- post-meta -->
 			 </div><!-- post-wrapper -->
