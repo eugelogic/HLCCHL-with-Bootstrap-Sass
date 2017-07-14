@@ -18,9 +18,15 @@ get_header(); ?>
 
 			<?php if ( have_posts() ) : ?>
 
+			<?php
+			/* translators: %s: search term */
+			$page_title = sprintf( __( 'Search Results for: %s', 'hlcchl' ),
+				'<span>' . get_search_query() . '</span>'
+			);
+			?>
+
 			<header class="page-header">
-				<?php /* translators: %s: search term */ ?>
-				<h2 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'hlcchl' ), '<span>' . get_search_query() . '</span>' ); ?></h2>
+				<h2 class="page-title"><?php echo esc_html( $page_title ); ?></h2>
 			</header><!-- .page-header -->
 
 				<div class="row">
