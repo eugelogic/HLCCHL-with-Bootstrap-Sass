@@ -27,47 +27,47 @@
 	================================================== -->
 	<header id="masthead" class="site-header" role="banner">
 
-		<!-- TOP BAR
-    ================================================== -->
-    <section id="top-bar">
-      <div class="container">
-				Call Us on
-				<a href="tel:02083429524">0208 342 9524</a>
-        -
-        Send Us an Email <a href="mailto:hollylodgelondon@hotmail.com">hollylodgelondon@hotmail.com</a>
-      </div><!-- container -->
-    </section>
+	<!-- TOP BAR
+	================================================== -->
+	<section id="top-bar">
+	  <div class="container">
+		Call Us on
+		<a href="tel:02083429524">0208 342 9524</a>
+		-
+		Send Us an Email <a href="mailto:hollylodgelondon@hotmail.com">hollylodgelondon@hotmail.com</a>
+	  </div><!-- container -->
+	</section>
 
-    <!-- SITE TITLE
-    ================================================== -->
-    <section id="site-title">
-      <div class="container">
-        <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-      </div><!-- container -->
-    </section>
+	<!-- SITE TITLE
+	================================================== -->
+	<section id="site-title">
+	  <div class="container">
+		<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+	  </div><!-- container -->
+	</section>
 
-    <!-- MAIN NAV MENU
-    ================================================== -->
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<div class="container">
-				<button class="menu-toggle" aria-controls="header-menu" aria-expanded="false"><?php esc_html_e( '&#926; Menu', 'hlcchl' ); ?></button>
-				<?php
-				wp_nav_menu( array(
-					'theme_location' => 'header-menu',
-					'menu_id' => 'header-menu',
-				) );
-				?>
-			</div><!-- container -->
-		</nav><!-- #site-navigation -->
+	<!-- MAIN NAV MENU
+	================================================== -->
+	<nav id="site-navigation" class="main-navigation" role="navigation">
+		<div class="container">
+			<button class="menu-toggle" aria-controls="header-menu" aria-expanded="false"><?php esc_html_e( '&#926; Menu', 'hlcchl' ); ?></button>
+			<?php
+			wp_nav_menu( array(
+				'theme_location' => 'header-menu',
+				'menu_id' => 'header-menu',
+			) );
+			?>
+		</div><!-- container -->
+	</nav><!-- #site-navigation -->
 
-		<?php if ( ! is_front_page() ) : ?>
-		 <!-- PAGE TITLE BAR
-	   ================================================== -->
-	   <div class="jumbotron" id="page-title-bar">
-	     <div class="container">
-	       <h1><?php the_title( '' ); ?></h1>
-	     </div><!-- container -->
-	   </div><!-- jumbo -->
-		<?php endif;?>
+	<?php if ( ! is_front_page() ) : ?>
+	 <!-- PAGE TITLE BAR
+   ================================================== -->
+   <div class="jumbotron" id="page-title-bar">
+	 <div class="container">
+	   <h1><?php the_title( '' ); ?></h1>
+	 </div><!-- container -->
+   </div><!-- jumbo -->
+	<?php endif;?>
 
   </header>
