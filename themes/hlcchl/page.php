@@ -17,15 +17,15 @@ get_header(); ?>
 <section id="default-tml">
   <div class="container">
 
-      <!-- CONTENT SECTION
-      ================================================== -->
-				<?php
-					while ( have_posts() ) : the_post();
+	  <!-- CONTENT SECTION
+	  ================================================== -->
+		<?php
+		while ( have_posts() ) : the_post();
 
-						get_template_part( 'template-parts/content', 'default' );
+			get_template_part( 'template-parts/content', 'default' );
 
-					endwhile; // End of the loop.
-				?>
+			endwhile; // End of the loop.
+		?>
 
   </div><!-- container -->
 </section>
