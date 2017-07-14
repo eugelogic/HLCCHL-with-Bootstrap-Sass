@@ -19,7 +19,7 @@ get_header(); ?>
 			<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				/* translators: %s: search term */
+				<?php /* translators: %s: search term */ ?>
 				<h2 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'hlcchl' ), '<span>' . get_search_query() . '</span>' ); ?></h2>
 			</header><!-- .page-header -->
 
