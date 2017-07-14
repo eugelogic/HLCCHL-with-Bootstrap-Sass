@@ -29,26 +29,26 @@ function hlcchl_custom_header_setup() {
 add_action( 'after_setup_theme', 'hlcchl_custom_header_setup' );
 
 if ( ! function_exists( 'hlcchl_header_style' ) ) :
-/**
- * Styles the header image and text displayed on the blog.
- *
- * @see hlcchl_custom_header_setup().
- */
-function hlcchl_header_style() {
-	$header_text_color = get_header_textcolor();
-
-	/*
-	 * If no custom options for text are set, let's bail.
-	 * get_header_textcolor() options: Any hex value, 'blank' to hide text. Default: add_theme_support( 'custom-header' ).
+	/**
+	 * Styles the header image and text displayed on the blog.
+	 *
+	 * @see hlcchl_custom_header_setup().
 	 */
-	if ( get_theme_support( 'custom-header', 'default-text-color' ) === $header_text_color ) {
-		return;
-	}
+	function hlcchl_header_style() {
+		$header_text_color = get_header_textcolor();
 
-	// If we get this far, we have custom styles. Let's do this.
-	?>
-	<style type="text/css">
-	<?php
+		/*
+		 * If no custom options for text are set, let's bail.
+		 * get_header_textcolor() options: Any hex value, 'blank' to hide text. Default: add_theme_support( 'custom-header' ).
+		 */
+		if ( get_theme_support( 'custom-header', 'default-text-color' ) === $header_text_color ) {
+			return;
+		}
+
+		// If we get this far, we have custom styles. Let's do this.
+		?>
+		<style type="text/css">
+		<?php
 		// Has the text been hidden?
 		if ( ! display_header_text() ) :
 	?>
@@ -68,5 +68,5 @@ function hlcchl_header_style() {
 	<?php endif; ?>
 	</style>
 	<?php
-}
+	}
 endif;
